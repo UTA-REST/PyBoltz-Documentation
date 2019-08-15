@@ -1,0 +1,7 @@
+GERJAN module
+=============
+
+.. automodule:: GERJAN
+   :members:
+   :undoc-members:
+   :show-inheritance:

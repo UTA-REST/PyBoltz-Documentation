@@ -1,0 +1,7 @@
+MIXERT\_obj module
+==================
+
+.. automodule:: MIXERT_obj
+   :members:
+   :undoc-members:
+   :show-inheritance:

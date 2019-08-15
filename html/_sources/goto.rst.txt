@@ -1,0 +1,7 @@
+goto module
+===========
+
+.. automodule:: goto
+   :members:
+   :undoc-members:
+   :show-inheritance:
