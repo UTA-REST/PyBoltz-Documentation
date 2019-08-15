@@ -1,0 +1,1640 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Magboltz module &#8212; PyBoltz 1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">PyBoltz 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-Magboltz">
+<span id="magboltz-module"></span><h1>Magboltz module<a class="headerlink" href="#module-Magboltz" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Magboltz.Magboltz">
+<em class="property">class </em><code class="sig-prename descclassname">Magboltz.</code><code class="sig-name descname">Magboltz</code><a class="headerlink" href="#Magboltz.Magboltz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This is the main object used to start the simulation, as well as store the information of the simulation.
+It has most of the needed arrays, and variables.</p>
+<p>More about Magboltz:</p>
+<p><a class="reference external" href="http://cyclo.mit.edu/drift/www/aboutMagboltz.html/">Magboltz_Documentation</a></p>
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.AIOERT">
+<code class="sig-name descname">AIOERT</code><a class="headerlink" href="#Magboltz.Magboltz.AIOERT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.AKT">
+<code class="sig-name descname">AKT</code><a class="headerlink" href="#Magboltz.Magboltz.AKT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALIN">
+<code class="sig-name descname">ALIN</code><a class="headerlink" href="#Magboltz.Magboltz.ALIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALION">
+<code class="sig-name descname">ALION</code><a class="headerlink" href="#Magboltz.Magboltz.ALION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALPER">
+<code class="sig-name descname">ALPER</code><a class="headerlink" href="#Magboltz.Magboltz.ALPER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALPHA">
+<code class="sig-name descname">ALPHA</code><a class="headerlink" href="#Magboltz.Magboltz.ALPHA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALPHAST">
+<code class="sig-name descname">ALPHAST</code><a class="headerlink" href="#Magboltz.Magboltz.ALPHAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALPHERR">
+<code class="sig-name descname">ALPHERR</code><a class="headerlink" href="#Magboltz.Magboltz.ALPHERR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALPHSST">
+<code class="sig-name descname">ALPHSST</code><a class="headerlink" href="#Magboltz.Magboltz.ALPHSST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ALPP">
+<code class="sig-name descname">ALPP</code><a class="headerlink" href="#Magboltz.Magboltz.ALPP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.AMGAS">
+<code class="sig-name descname">AMGAS</code><a class="headerlink" href="#Magboltz.Magboltz.AMGAS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.AN">
+<code class="sig-name descname">AN</code><a class="headerlink" href="#Magboltz.Magboltz.AN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ANGCT">
+<code class="sig-name descname">ANGCT</code><a class="headerlink" href="#Magboltz.Magboltz.ANGCT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ANGCTNT">
+<code class="sig-name descname">ANGCTNT</code><a class="headerlink" href="#Magboltz.Magboltz.ANGCTNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ANN">
+<code class="sig-name descname">ANN</code><a class="headerlink" href="#Magboltz.Magboltz.ANN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.API">
+<code class="sig-name descname">API</code><a class="headerlink" href="#Magboltz.Magboltz.API" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ARY">
+<code class="sig-name descname">ARY</code><a class="headerlink" href="#Magboltz.Magboltz.ARY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATT">
+<code class="sig-name descname">ATT</code><a class="headerlink" href="#Magboltz.Magboltz.ATT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTATER">
+<code class="sig-name descname">ATTATER</code><a class="headerlink" href="#Magboltz.Magboltz.ATTATER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTER">
+<code class="sig-name descname">ATTER</code><a class="headerlink" href="#Magboltz.Magboltz.ATTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTERR">
+<code class="sig-name descname">ATTERR</code><a class="headerlink" href="#Magboltz.Magboltz.ATTERR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTERT">
+<code class="sig-name descname">ATTERT</code><a class="headerlink" href="#Magboltz.Magboltz.ATTERT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTIOER">
+<code class="sig-name descname">ATTIOER</code><a class="headerlink" href="#Magboltz.Magboltz.ATTIOER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTOINT">
+<code class="sig-name descname">ATTOINT</code><a class="headerlink" href="#Magboltz.Magboltz.ATTOINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTOION">
+<code class="sig-name descname">ATTOION</code><a class="headerlink" href="#Magboltz.Magboltz.ATTOION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTP">
+<code class="sig-name descname">ATTP</code><a class="headerlink" href="#Magboltz.Magboltz.ATTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ATTSST">
+<code class="sig-name descname">ATTSST</code><a class="headerlink" href="#Magboltz.Magboltz.ATTSST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.AVE">
+<code class="sig-name descname">AVE</code><a class="headerlink" href="#Magboltz.Magboltz.AVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.BMAG">
+<code class="sig-name descname">BMAG</code><a class="headerlink" href="#Magboltz.Magboltz.BMAG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.BTHETA">
+<code class="sig-name descname">BTHETA</code><a class="headerlink" href="#Magboltz.Magboltz.BTHETA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CF">
+<code class="sig-name descname">CF</code><a class="headerlink" href="#Magboltz.Magboltz.CF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CFN">
+<code class="sig-name descname">CFN</code><a class="headerlink" href="#Magboltz.Magboltz.CFN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CFNNT">
+<code class="sig-name descname">CFNNT</code><a class="headerlink" href="#Magboltz.Magboltz.CFNNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CFNT">
+<code class="sig-name descname">CFNT</code><a class="headerlink" href="#Magboltz.Magboltz.CFNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CONST1">
+<code class="sig-name descname">CONST1</code><a class="headerlink" href="#Magboltz.Magboltz.CONST1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CONST2">
+<code class="sig-name descname">CONST2</code><a class="headerlink" href="#Magboltz.Magboltz.CONST2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CONST3">
+<code class="sig-name descname">CONST3</code><a class="headerlink" href="#Magboltz.Magboltz.CONST3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CONST4">
+<code class="sig-name descname">CONST4</code><a class="headerlink" href="#Magboltz.Magboltz.CONST4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CONST5">
+<code class="sig-name descname">CONST5</code><a class="headerlink" href="#Magboltz.Magboltz.CONST5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.CORR">
+<code class="sig-name descname">CORR</code><a class="headerlink" href="#Magboltz.Magboltz.CORR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DCX">
+<code class="sig-name descname">DCX</code><a class="headerlink" href="#Magboltz.Magboltz.DCX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DCXS">
+<code class="sig-name descname">DCXS</code><a class="headerlink" href="#Magboltz.Magboltz.DCXS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DCY">
+<code class="sig-name descname">DCY</code><a class="headerlink" href="#Magboltz.Magboltz.DCY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DCYS">
+<code class="sig-name descname">DCYS</code><a class="headerlink" href="#Magboltz.Magboltz.DCYS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DCZ">
+<code class="sig-name descname">DCZ</code><a class="headerlink" href="#Magboltz.Magboltz.DCZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DCZS">
+<code class="sig-name descname">DCZS</code><a class="headerlink" href="#Magboltz.Magboltz.DCZS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DEN">
+<code class="sig-name descname">DEN</code><a class="headerlink" href="#Magboltz.Magboltz.DEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DENSY">
+<code class="sig-name descname">DENSY</code><a class="headerlink" href="#Magboltz.Magboltz.DENSY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DFLER">
+<code class="sig-name descname">DFLER</code><a class="headerlink" href="#Magboltz.Magboltz.DFLER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DFLER1">
+<code class="sig-name descname">DFLER1</code><a class="headerlink" href="#Magboltz.Magboltz.DFLER1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DFTER">
+<code class="sig-name descname">DFTER</code><a class="headerlink" href="#Magboltz.Magboltz.DFTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DFTER1">
+<code class="sig-name descname">DFTER1</code><a class="headerlink" href="#Magboltz.Magboltz.DFTER1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFLN">
+<code class="sig-name descname">DIFLN</code><a class="headerlink" href="#Magboltz.Magboltz.DIFLN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFTR">
+<code class="sig-name descname">DIFTR</code><a class="headerlink" href="#Magboltz.Magboltz.DIFTR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFXX">
+<code class="sig-name descname">DIFXX</code><a class="headerlink" href="#Magboltz.Magboltz.DIFXX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFXY">
+<code class="sig-name descname">DIFXY</code><a class="headerlink" href="#Magboltz.Magboltz.DIFXY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFXZ">
+<code class="sig-name descname">DIFXZ</code><a class="headerlink" href="#Magboltz.Magboltz.DIFXZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFYY">
+<code class="sig-name descname">DIFYY</code><a class="headerlink" href="#Magboltz.Magboltz.DIFYY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFYZ">
+<code class="sig-name descname">DIFYZ</code><a class="headerlink" href="#Magboltz.Magboltz.DIFYZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DIFZZ">
+<code class="sig-name descname">DIFZZ</code><a class="headerlink" href="#Magboltz.Magboltz.DIFZZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DLERR">
+<code class="sig-name descname">DLERR</code><a class="headerlink" href="#Magboltz.Magboltz.DLERR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DLMN">
+<code class="sig-name descname">DLMN</code><a class="headerlink" href="#Magboltz.Magboltz.DLMN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DLOUT">
+<code class="sig-name descname">DLOUT</code><a class="headerlink" href="#Magboltz.Magboltz.DLOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DLOVMB">
+<code class="sig-name descname">DLOVMB</code><a class="headerlink" href="#Magboltz.Magboltz.DLOVMB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DTERR">
+<code class="sig-name descname">DTERR</code><a class="headerlink" href="#Magboltz.Magboltz.DTERR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DTMN">
+<code class="sig-name descname">DTMN</code><a class="headerlink" href="#Magboltz.Magboltz.DTMN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DTOUT">
+<code class="sig-name descname">DTOUT</code><a class="headerlink" href="#Magboltz.Magboltz.DTOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DTOVMB">
+<code class="sig-name descname">DTOVMB</code><a class="headerlink" href="#Magboltz.Magboltz.DTOVMB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DWX">
+<code class="sig-name descname">DWX</code><a class="headerlink" href="#Magboltz.Magboltz.DWX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DWY">
+<code class="sig-name descname">DWY</code><a class="headerlink" href="#Magboltz.Magboltz.DWY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DWZ">
+<code class="sig-name descname">DWZ</code><a class="headerlink" href="#Magboltz.Magboltz.DWZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DXXER">
+<code class="sig-name descname">DXXER</code><a class="headerlink" href="#Magboltz.Magboltz.DXXER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DXYER">
+<code class="sig-name descname">DXYER</code><a class="headerlink" href="#Magboltz.Magboltz.DXYER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DXZER">
+<code class="sig-name descname">DXZER</code><a class="headerlink" href="#Magboltz.Magboltz.DXZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DYYER">
+<code class="sig-name descname">DYYER</code><a class="headerlink" href="#Magboltz.Magboltz.DYYER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DYZER">
+<code class="sig-name descname">DYZER</code><a class="headerlink" href="#Magboltz.Magboltz.DYZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.DZZER">
+<code class="sig-name descname">DZZER</code><a class="headerlink" href="#Magboltz.Magboltz.DZZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.E">
+<code class="sig-name descname">E</code><a class="headerlink" href="#Magboltz.Magboltz.E" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EC0">
+<code class="sig-name descname">EC0</code><a class="headerlink" href="#Magboltz.Magboltz.EC0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EC0NT">
+<code class="sig-name descname">EC0NT</code><a class="headerlink" href="#Magboltz.Magboltz.EC0NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EFIELD">
+<code class="sig-name descname">EFIELD</code><a class="headerlink" href="#Magboltz.Magboltz.EFIELD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EFINAL">
+<code class="sig-name descname">EFINAL</code><a class="headerlink" href="#Magboltz.Magboltz.EFINAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EFL">
+<code class="sig-name descname">EFL</code><a class="headerlink" href="#Magboltz.Magboltz.EFL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EFLNT">
+<code class="sig-name descname">EFLNT</code><a class="headerlink" href="#Magboltz.Magboltz.EFLNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EG1">
+<code class="sig-name descname">EG1</code><a class="headerlink" href="#Magboltz.Magboltz.EG1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EG1NT">
+<code class="sig-name descname">EG1NT</code><a class="headerlink" href="#Magboltz.Magboltz.EG1NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EG2">
+<code class="sig-name descname">EG2</code><a class="headerlink" href="#Magboltz.Magboltz.EG2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EG2NT">
+<code class="sig-name descname">EG2NT</code><a class="headerlink" href="#Magboltz.Magboltz.EG2NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EIN">
+<code class="sig-name descname">EIN</code><a class="headerlink" href="#Magboltz.Magboltz.EIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EINNT">
+<code class="sig-name descname">EINNT</code><a class="headerlink" href="#Magboltz.Magboltz.EINNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EOVB">
+<code class="sig-name descname">EOVB</code><a class="headerlink" href="#Magboltz.Magboltz.EOVB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EPT">
+<code class="sig-name descname">EPT</code><a class="headerlink" href="#Magboltz.Magboltz.EPT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.EROOT">
+<code class="sig-name descname">EROOT</code><a class="headerlink" href="#Magboltz.Magboltz.EROOT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ES">
+<code class="sig-name descname">ES</code><a class="headerlink" href="#Magboltz.Magboltz.ES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ESPL">
+<code class="sig-name descname">ESPL</code><a class="headerlink" href="#Magboltz.Magboltz.ESPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ESS">
+<code class="sig-name descname">ESS</code><a class="headerlink" href="#Magboltz.Magboltz.ESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ESTART">
+<code class="sig-name descname">ESTART</code><a class="headerlink" href="#Magboltz.Magboltz.ESTART" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ESTEP">
+<code class="sig-name descname">ESTEP</code><a class="headerlink" href="#Magboltz.Magboltz.ESTEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ETPL">
+<code class="sig-name descname">ETPL</code><a class="headerlink" href="#Magboltz.Magboltz.ETPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.FAKEI">
+<code class="sig-name descname">FAKEI</code><a class="headerlink" href="#Magboltz.Magboltz.FAKEI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.FCATT">
+<code class="sig-name descname">FCATT</code><a class="headerlink" href="#Magboltz.Magboltz.FCATT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.FCION">
+<code class="sig-name descname">FCION</code><a class="headerlink" href="#Magboltz.Magboltz.FCION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.FRAC">
+<code class="sig-name descname">FRAC</code><a class="headerlink" href="#Magboltz.Magboltz.FRAC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IARRY">
+<code class="sig-name descname">IARRY</code><a class="headerlink" href="#Magboltz.Magboltz.IARRY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IARRYNT">
+<code class="sig-name descname">IARRYNT</code><a class="headerlink" href="#Magboltz.Magboltz.IARRYNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ICOLL">
+<code class="sig-name descname">ICOLL</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ICOLLNT">
+<code class="sig-name descname">ICOLLNT</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLLNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ICOLN">
+<code class="sig-name descname">ICOLN</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ICOLNN">
+<code class="sig-name descname">ICOLNN</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLNN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ICOLNNNT">
+<code class="sig-name descname">ICOLNNNT</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLNNNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ICOLNNT">
+<code class="sig-name descname">ICOLNNT</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLNNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IELOW">
+<code class="sig-name descname">IELOW</code><a class="headerlink" href="#Magboltz.Magboltz.IELOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IFAKE">
+<code class="sig-name descname">IFAKE</code><a class="headerlink" href="#Magboltz.Magboltz.IFAKE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IFAKED">
+<code class="sig-name descname">IFAKED</code><a class="headerlink" href="#Magboltz.Magboltz.IFAKED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IFAKET">
+<code class="sig-name descname">IFAKET</code><a class="headerlink" href="#Magboltz.Magboltz.IFAKET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.INDEX">
+<code class="sig-name descname">INDEX</code><a class="headerlink" href="#Magboltz.Magboltz.INDEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.INDEXNT">
+<code class="sig-name descname">INDEXNT</code><a class="headerlink" href="#Magboltz.Magboltz.INDEXNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPEN">
+<code class="sig-name descname">IPEN</code><a class="headerlink" href="#Magboltz.Magboltz.IPEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPL">
+<code class="sig-name descname">IPL</code><a class="headerlink" href="#Magboltz.Magboltz.IPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPLAST">
+<code class="sig-name descname">IPLAST</code><a class="headerlink" href="#Magboltz.Magboltz.IPLAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPLASTNT">
+<code class="sig-name descname">IPLASTNT</code><a class="headerlink" href="#Magboltz.Magboltz.IPLASTNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPLS">
+<code class="sig-name descname">IPLS</code><a class="headerlink" href="#Magboltz.Magboltz.IPLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPN">
+<code class="sig-name descname">IPN</code><a class="headerlink" href="#Magboltz.Magboltz.IPN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPNNT">
+<code class="sig-name descname">IPNNT</code><a class="headerlink" href="#Magboltz.Magboltz.IPNNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IPRIM">
+<code class="sig-name descname">IPRIM</code><a class="headerlink" href="#Magboltz.Magboltz.IPRIM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ISIZE">
+<code class="sig-name descname">ISIZE</code><a class="headerlink" href="#Magboltz.Magboltz.ISIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ISIZENT">
+<code class="sig-name descname">ISIZENT</code><a class="headerlink" href="#Magboltz.Magboltz.ISIZENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ITFINAL">
+<code class="sig-name descname">ITFINAL</code><a class="headerlink" href="#Magboltz.Magboltz.ITFINAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ITHRM">
+<code class="sig-name descname">ITHRM</code><a class="headerlink" href="#Magboltz.Magboltz.ITHRM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ITMAX">
+<code class="sig-name descname">ITMAX</code><a class="headerlink" href="#Magboltz.Magboltz.ITMAX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.IZFINAL">
+<code class="sig-name descname">IZFINAL</code><a class="headerlink" href="#Magboltz.Magboltz.IZFINAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.LAST">
+<code class="sig-name descname">LAST</code><a class="headerlink" href="#Magboltz.Magboltz.LAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.LIN">
+<code class="sig-name descname">LIN</code><a class="headerlink" href="#Magboltz.Magboltz.LIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.LION">
+<code class="sig-name descname">LION</code><a class="headerlink" href="#Magboltz.Magboltz.LION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NANISO">
+<code class="sig-name descname">NANISO</code><a class="headerlink" href="#Magboltz.Magboltz.NANISO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NC0">
+<code class="sig-name descname">NC0</code><a class="headerlink" href="#Magboltz.Magboltz.NC0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NC0NT">
+<code class="sig-name descname">NC0NT</code><a class="headerlink" href="#Magboltz.Magboltz.NC0NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NCOLM">
+<code class="sig-name descname">NCOLM</code><a class="headerlink" href="#Magboltz.Magboltz.NCOLM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NCORLN">
+<code class="sig-name descname">NCORLN</code><a class="headerlink" href="#Magboltz.Magboltz.NCORLN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NCORST">
+<code class="sig-name descname">NCORST</code><a class="headerlink" href="#Magboltz.Magboltz.NCORST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NESST">
+<code class="sig-name descname">NESST</code><a class="headerlink" href="#Magboltz.Magboltz.NESST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NETPL">
+<code class="sig-name descname">NETPL</code><a class="headerlink" href="#Magboltz.Magboltz.NETPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NG1">
+<code class="sig-name descname">NG1</code><a class="headerlink" href="#Magboltz.Magboltz.NG1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NG1NT">
+<code class="sig-name descname">NG1NT</code><a class="headerlink" href="#Magboltz.Magboltz.NG1NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NG2">
+<code class="sig-name descname">NG2</code><a class="headerlink" href="#Magboltz.Magboltz.NG2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NG2NT">
+<code class="sig-name descname">NG2NT</code><a class="headerlink" href="#Magboltz.Magboltz.NG2NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NGAS">
+<code class="sig-name descname">NGAS</code><a class="headerlink" href="#Magboltz.Magboltz.NGAS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NGASN">
+<code class="sig-name descname">NGASN</code><a class="headerlink" href="#Magboltz.Magboltz.NGASN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NIN">
+<code class="sig-name descname">NIN</code><a class="headerlink" href="#Magboltz.Magboltz.NIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NISO">
+<code class="sig-name descname">NISO</code><a class="headerlink" href="#Magboltz.Magboltz.NISO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NMAX">
+<code class="sig-name descname">NMAX</code><a class="headerlink" href="#Magboltz.Magboltz.NMAX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NMAXOLD">
+<code class="sig-name descname">NMAXOLD</code><a class="headerlink" href="#Magboltz.Magboltz.NMAXOLD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NNULL">
+<code class="sig-name descname">NNULL</code><a class="headerlink" href="#Magboltz.Magboltz.NNULL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NPLAST">
+<code class="sig-name descname">NPLAST</code><a class="headerlink" href="#Magboltz.Magboltz.NPLAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NPLASTNT">
+<code class="sig-name descname">NPLASTNT</code><a class="headerlink" href="#Magboltz.Magboltz.NPLASTNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NSCALE">
+<code class="sig-name descname">NSCALE</code><a class="headerlink" href="#Magboltz.Magboltz.NSCALE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.NSTEP">
+<code class="sig-name descname">NSTEP</code><a class="headerlink" href="#Magboltz.Magboltz.NSTEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.PENFRA">
+<code class="sig-name descname">PENFRA</code><a class="headerlink" href="#Magboltz.Magboltz.PENFRA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.PENFRANT">
+<code class="sig-name descname">PENFRANT</code><a class="headerlink" href="#Magboltz.Magboltz.PENFRANT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.PHI">
+<code class="sig-name descname">PHI</code><a class="headerlink" href="#Magboltz.Magboltz.PHI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.PIR2">
+<code class="sig-name descname">PIR2</code><a class="headerlink" href="#Magboltz.Magboltz.PIR2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.PSCT">
+<code class="sig-name descname">PSCT</code><a class="headerlink" href="#Magboltz.Magboltz.PSCT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.PSCTNT">
+<code class="sig-name descname">PSCTNT</code><a class="headerlink" href="#Magboltz.Magboltz.PSCTNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QEL">
+<code class="sig-name descname">QEL</code><a class="headerlink" href="#Magboltz.Magboltz.QEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QELM">
+<code class="sig-name descname">QELM</code><a class="headerlink" href="#Magboltz.Magboltz.QELM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QIN">
+<code class="sig-name descname">QIN</code><a class="headerlink" href="#Magboltz.Magboltz.QIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QINEL">
+<code class="sig-name descname">QINEL</code><a class="headerlink" href="#Magboltz.Magboltz.QINEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QION">
+<code class="sig-name descname">QION</code><a class="headerlink" href="#Magboltz.Magboltz.QION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QREL">
+<code class="sig-name descname">QREL</code><a class="headerlink" href="#Magboltz.Magboltz.QREL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QSATT">
+<code class="sig-name descname">QSATT</code><a class="headerlink" href="#Magboltz.Magboltz.QSATT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QSUM">
+<code class="sig-name descname">QSUM</code><a class="headerlink" href="#Magboltz.Magboltz.QSUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.QTOT">
+<code class="sig-name descname">QTOT</code><a class="headerlink" href="#Magboltz.Magboltz.QTOT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RALPER">
+<code class="sig-name descname">RALPER</code><a class="headerlink" href="#Magboltz.Magboltz.RALPER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RALPHA">
+<code class="sig-name descname">RALPHA</code><a class="headerlink" href="#Magboltz.Magboltz.RALPHA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RATOFER">
+<code class="sig-name descname">RATOFER</code><a class="headerlink" href="#Magboltz.Magboltz.RATOFER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RATTOF">
+<code class="sig-name descname">RATTOF</code><a class="headerlink" href="#Magboltz.Magboltz.RATTOF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RATTOFER">
+<code class="sig-name descname">RATTOFER</code><a class="headerlink" href="#Magboltz.Magboltz.RATTOFER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RGAS">
+<code class="sig-name descname">RGAS</code><a class="headerlink" href="#Magboltz.Magboltz.RGAS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RGASNT">
+<code class="sig-name descname">RGASNT</code><a class="headerlink" href="#Magboltz.Magboltz.RGASNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RI">
+<code class="sig-name descname">RI</code><a class="headerlink" href="#Magboltz.Magboltz.RI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RNMX">
+<code class="sig-name descname">RNMX</code><a class="headerlink" href="#Magboltz.Magboltz.RNMX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RRSPL">
+<code class="sig-name descname">RRSPL</code><a class="headerlink" href="#Magboltz.Magboltz.RRSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RRSPM">
+<code class="sig-name descname">RRSPM</code><a class="headerlink" href="#Magboltz.Magboltz.RRSPM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RSPL">
+<code class="sig-name descname">RSPL</code><a class="headerlink" href="#Magboltz.Magboltz.RSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.RSTART">
+<code class="sig-name descname">RSTART</code><a class="headerlink" href="#Magboltz.Magboltz.RSTART" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.SCLENUL">
+<code class="sig-name descname">SCLENUL</code><a class="headerlink" href="#Magboltz.Magboltz.SCLENUL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.SCLENULNT">
+<code class="sig-name descname">SCLENULNT</code><a class="headerlink" href="#Magboltz.Magboltz.SCLENULNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.SMALL">
+<code class="sig-name descname">SMALL</code><a class="headerlink" href="#Magboltz.Magboltz.SMALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.SPEC">
+<code class="sig-name descname">SPEC</code><a class="headerlink" href="#Magboltz.Magboltz.SPEC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.SSTMIN">
+<code class="sig-name descname">SSTMIN</code><a class="headerlink" href="#Magboltz.Magboltz.SSTMIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ST">
+<code class="sig-name descname">ST</code><a class="headerlink" href="#Magboltz.Magboltz.ST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Magboltz.Magboltz.Start">
+<code class="sig-name descname">Start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Magboltz.Magboltz.Start" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the main function that starts the magboltz simulation/calculation.</p>
+<p>The simulation starts by calculating the momentum cross section values for the requested gas mixture. If EFINAL
+is equal to 0.0 it will then keep calling the ELIMIT functions and the MIXER functions to find the electron
+Integration limit.</p>
+<p>Finally Magboltz calls the Monte carlo functions, which is where the main simulation happens. The outputs are stored
+in the the parent object of this function.</p>
+<p>For more info on the main output variables check the git repository readme:
+<a class="reference external" href="https://github.com/UTA-REST/MAGBOLTZ-py/">PyBoltz repository</a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCF">
+<code class="sig-name descname">TCF</code><a class="headerlink" href="#Magboltz.Magboltz.TCF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCFMAX">
+<code class="sig-name descname">TCFMAX</code><a class="headerlink" href="#Magboltz.Magboltz.TCFMAX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCFMAXNT">
+<code class="sig-name descname">TCFMAXNT</code><a class="headerlink" href="#Magboltz.Magboltz.TCFMAXNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCFMX">
+<code class="sig-name descname">TCFMX</code><a class="headerlink" href="#Magboltz.Magboltz.TCFMX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCFMXG">
+<code class="sig-name descname">TCFMXG</code><a class="headerlink" href="#Magboltz.Magboltz.TCFMXG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCFN">
+<code class="sig-name descname">TCFN</code><a class="headerlink" href="#Magboltz.Magboltz.TCFN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCFNNT">
+<code class="sig-name descname">TCFNNT</code><a class="headerlink" href="#Magboltz.Magboltz.TCFNNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TCFNT">
+<code class="sig-name descname">TCFNT</code><a class="headerlink" href="#Magboltz.Magboltz.TCFNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TEMPC">
+<code class="sig-name descname">TEMPC</code><a class="headerlink" href="#Magboltz.Magboltz.TEMPC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TFINAL">
+<code class="sig-name descname">TFINAL</code><a class="headerlink" href="#Magboltz.Magboltz.TFINAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TGAS">
+<code class="sig-name descname">TGAS</code><a class="headerlink" href="#Magboltz.Magboltz.TGAS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.THETA">
+<code class="sig-name descname">THETA</code><a class="headerlink" href="#Magboltz.Magboltz.THETA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TIME">
+<code class="sig-name descname">TIME</code><a class="headerlink" href="#Magboltz.Magboltz.TIME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TMAX">
+<code class="sig-name descname">TMAX</code><a class="headerlink" href="#Magboltz.Magboltz.TMAX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TMAX1">
+<code class="sig-name descname">TMAX1</code><a class="headerlink" href="#Magboltz.Magboltz.TMAX1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TMSPL">
+<code class="sig-name descname">TMSPL</code><a class="headerlink" href="#Magboltz.Magboltz.TMSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TODENE">
+<code class="sig-name descname">TODENE</code><a class="headerlink" href="#Magboltz.Magboltz.TODENE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDL">
+<code class="sig-name descname">TOFDL</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDLER">
+<code class="sig-name descname">TOFDLER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDLER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDT">
+<code class="sig-name descname">TOFDT</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDTER">
+<code class="sig-name descname">TOFDTER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDXX">
+<code class="sig-name descname">TOFDXX</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDXX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDXXER">
+<code class="sig-name descname">TOFDXXER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDXXER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDXY">
+<code class="sig-name descname">TOFDXY</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDXY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDXYER">
+<code class="sig-name descname">TOFDXYER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDXYER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDXZ">
+<code class="sig-name descname">TOFDXZ</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDXZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDXZER">
+<code class="sig-name descname">TOFDXZER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDXZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDYY">
+<code class="sig-name descname">TOFDYY</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDYY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDYYER">
+<code class="sig-name descname">TOFDYYER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDYYER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDYZ">
+<code class="sig-name descname">TOFDYZ</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDYZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDYZER">
+<code class="sig-name descname">TOFDYZER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDYZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDZZ">
+<code class="sig-name descname">TOFDZZ</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDZZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFDZZER">
+<code class="sig-name descname">TOFDZZER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFDZZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFENE">
+<code class="sig-name descname">TOFENE</code><a class="headerlink" href="#Magboltz.Magboltz.TOFENE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFENER">
+<code class="sig-name descname">TOFENER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFENER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWR">
+<code class="sig-name descname">TOFWR</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWRER">
+<code class="sig-name descname">TOFWRER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWRER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWRX">
+<code class="sig-name descname">TOFWRX</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWRX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWRXER">
+<code class="sig-name descname">TOFWRXER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWRXER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWRY">
+<code class="sig-name descname">TOFWRY</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWRY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWRYER">
+<code class="sig-name descname">TOFWRYER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWRYER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWRZ">
+<code class="sig-name descname">TOFWRZ</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWRZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWRZER">
+<code class="sig-name descname">TOFWRZER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWRZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWV">
+<code class="sig-name descname">TOFWV</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWVER">
+<code class="sig-name descname">TOFWVER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWVX">
+<code class="sig-name descname">TOFWVX</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWVX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWVXER">
+<code class="sig-name descname">TOFWVXER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWVXER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWVY">
+<code class="sig-name descname">TOFWVY</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWVY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWVYER">
+<code class="sig-name descname">TOFWVYER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWVYER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWVZ">
+<code class="sig-name descname">TOFWVZ</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWVZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TOFWVZER">
+<code class="sig-name descname">TOFWVZER</code><a class="headerlink" href="#Magboltz.Magboltz.TOFWVZER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TORR">
+<code class="sig-name descname">TORR</code><a class="headerlink" href="#Magboltz.Magboltz.TORR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TS">
+<code class="sig-name descname">TS</code><a class="headerlink" href="#Magboltz.Magboltz.TS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TSPL">
+<code class="sig-name descname">TSPL</code><a class="headerlink" href="#Magboltz.Magboltz.TSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TSS">
+<code class="sig-name descname">TSS</code><a class="headerlink" href="#Magboltz.Magboltz.TSS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TSSUM">
+<code class="sig-name descname">TSSUM</code><a class="headerlink" href="#Magboltz.Magboltz.TSSUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TSSUM2">
+<code class="sig-name descname">TSSUM2</code><a class="headerlink" href="#Magboltz.Magboltz.TSSUM2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TSTEP">
+<code class="sig-name descname">TSTEP</code><a class="headerlink" href="#Magboltz.Magboltz.TSTEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TTEST">
+<code class="sig-name descname">TTEST</code><a class="headerlink" href="#Magboltz.Magboltz.TTEST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TTMSPL">
+<code class="sig-name descname">TTMSPL</code><a class="headerlink" href="#Magboltz.Magboltz.TTMSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TTOT">
+<code class="sig-name descname">TTOT</code><a class="headerlink" href="#Magboltz.Magboltz.TTOT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TTOTS">
+<code class="sig-name descname">TTOTS</code><a class="headerlink" href="#Magboltz.Magboltz.TTOTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.TTPL">
+<code class="sig-name descname">TTPL</code><a class="headerlink" href="#Magboltz.Magboltz.TTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VAN">
+<code class="sig-name descname">VAN</code><a class="headerlink" href="#Magboltz.Magboltz.VAN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VANN">
+<code class="sig-name descname">VANN</code><a class="headerlink" href="#Magboltz.Magboltz.VANN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VDERR">
+<code class="sig-name descname">VDERR</code><a class="headerlink" href="#Magboltz.Magboltz.VDERR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VDOUT">
+<code class="sig-name descname">VDOUT</code><a class="headerlink" href="#Magboltz.Magboltz.VDOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VDST">
+<code class="sig-name descname">VDST</code><a class="headerlink" href="#Magboltz.Magboltz.VDST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VTMB">
+<code class="sig-name descname">VTMB</code><a class="headerlink" href="#Magboltz.Magboltz.VTMB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VXTPL">
+<code class="sig-name descname">VXTPL</code><a class="headerlink" href="#Magboltz.Magboltz.VXTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VYTPL">
+<code class="sig-name descname">VYTPL</code><a class="headerlink" href="#Magboltz.Magboltz.VYTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VZPT">
+<code class="sig-name descname">VZPT</code><a class="headerlink" href="#Magboltz.Magboltz.VZPT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VZSPL">
+<code class="sig-name descname">VZSPL</code><a class="headerlink" href="#Magboltz.Magboltz.VZSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.VZTPL">
+<code class="sig-name descname">VZTPL</code><a class="headerlink" href="#Magboltz.Magboltz.VZTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WB">
+<code class="sig-name descname">WB</code><a class="headerlink" href="#Magboltz.Magboltz.WB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WKLM">
+<code class="sig-name descname">WKLM</code><a class="headerlink" href="#Magboltz.Magboltz.WKLM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WKLMNT">
+<code class="sig-name descname">WKLMNT</code><a class="headerlink" href="#Magboltz.Magboltz.WKLMNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WPL">
+<code class="sig-name descname">WPL</code><a class="headerlink" href="#Magboltz.Magboltz.WPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WPLNT">
+<code class="sig-name descname">WPLNT</code><a class="headerlink" href="#Magboltz.Magboltz.WPLNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WSERR">
+<code class="sig-name descname">WSERR</code><a class="headerlink" href="#Magboltz.Magboltz.WSERR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WSOUT">
+<code class="sig-name descname">WSOUT</code><a class="headerlink" href="#Magboltz.Magboltz.WSOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WX">
+<code class="sig-name descname">WX</code><a class="headerlink" href="#Magboltz.Magboltz.WX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WY">
+<code class="sig-name descname">WY</code><a class="headerlink" href="#Magboltz.Magboltz.WY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.WZ">
+<code class="sig-name descname">WZ</code><a class="headerlink" href="#Magboltz.Magboltz.WZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.X">
+<code class="sig-name descname">X</code><a class="headerlink" href="#Magboltz.Magboltz.X" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XID">
+<code class="sig-name descname">XID</code><a class="headerlink" href="#Magboltz.Magboltz.XID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XS">
+<code class="sig-name descname">XS</code><a class="headerlink" href="#Magboltz.Magboltz.XS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XSPL">
+<code class="sig-name descname">XSPL</code><a class="headerlink" href="#Magboltz.Magboltz.XSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XSS">
+<code class="sig-name descname">XSS</code><a class="headerlink" href="#Magboltz.Magboltz.XSS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XTPL">
+<code class="sig-name descname">XTPL</code><a class="headerlink" href="#Magboltz.Magboltz.XTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XXSPL">
+<code class="sig-name descname">XXSPL</code><a class="headerlink" href="#Magboltz.Magboltz.XXSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XXTPL">
+<code class="sig-name descname">XXTPL</code><a class="headerlink" href="#Magboltz.Magboltz.XXTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XYTPL">
+<code class="sig-name descname">XYTPL</code><a class="headerlink" href="#Magboltz.Magboltz.XYTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.XZTPL">
+<code class="sig-name descname">XZTPL</code><a class="headerlink" href="#Magboltz.Magboltz.XZTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.Y">
+<code class="sig-name descname">Y</code><a class="headerlink" href="#Magboltz.Magboltz.Y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.YS">
+<code class="sig-name descname">YS</code><a class="headerlink" href="#Magboltz.Magboltz.YS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.YSPL">
+<code class="sig-name descname">YSPL</code><a class="headerlink" href="#Magboltz.Magboltz.YSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.YSS">
+<code class="sig-name descname">YSS</code><a class="headerlink" href="#Magboltz.Magboltz.YSS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.YTPL">
+<code class="sig-name descname">YTPL</code><a class="headerlink" href="#Magboltz.Magboltz.YTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.YYSPL">
+<code class="sig-name descname">YYSPL</code><a class="headerlink" href="#Magboltz.Magboltz.YYSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.YYTPL">
+<code class="sig-name descname">YYTPL</code><a class="headerlink" href="#Magboltz.Magboltz.YYTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.YZTPL">
+<code class="sig-name descname">YZTPL</code><a class="headerlink" href="#Magboltz.Magboltz.YZTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.Z">
+<code class="sig-name descname">Z</code><a class="headerlink" href="#Magboltz.Magboltz.Z" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZFINAL">
+<code class="sig-name descname">ZFINAL</code><a class="headerlink" href="#Magboltz.Magboltz.ZFINAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZPLANE">
+<code class="sig-name descname">ZPLANE</code><a class="headerlink" href="#Magboltz.Magboltz.ZPLANE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZS">
+<code class="sig-name descname">ZS</code><a class="headerlink" href="#Magboltz.Magboltz.ZS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZSPL">
+<code class="sig-name descname">ZSPL</code><a class="headerlink" href="#Magboltz.Magboltz.ZSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZSS">
+<code class="sig-name descname">ZSS</code><a class="headerlink" href="#Magboltz.Magboltz.ZSS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZSTEP">
+<code class="sig-name descname">ZSTEP</code><a class="headerlink" href="#Magboltz.Magboltz.ZSTEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZTOT">
+<code class="sig-name descname">ZTOT</code><a class="headerlink" href="#Magboltz.Magboltz.ZTOT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZTOTS">
+<code class="sig-name descname">ZTOTS</code><a class="headerlink" href="#Magboltz.Magboltz.ZTOTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZTPL">
+<code class="sig-name descname">ZTPL</code><a class="headerlink" href="#Magboltz.Magboltz.ZTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZZSPL">
+<code class="sig-name descname">ZZSPL</code><a class="headerlink" href="#Magboltz.Magboltz.ZZSPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Magboltz.Magboltz.ZZTPL">
+<code class="sig-name descname">ZZTPL</code><a class="headerlink" href="#Magboltz.Magboltz.ZZTPL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Magboltz.Magboltz.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Magboltz.Magboltz.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to convert some of the output values into different units.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/rst/Magboltz.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">PyBoltz 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Bashar Al Atoum, Austin Mcdonald.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
+    </div>
+  </body>
+</html>
