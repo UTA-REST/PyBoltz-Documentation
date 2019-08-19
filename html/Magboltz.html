@@ -53,6 +53,10 @@
 It has most of the needed arrays, and variables.</p>
 <p>More about Magboltz:</p>
 <p><a class="reference external" href="http://cyclo.mit.edu/drift/www/aboutMagboltz.html/">Magboltz_Documentation</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the variable has a “NT” at the end, that variable has the same function as its counterpart without a “NT” at the end.</p>
+</div>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.AIOERT">
 <code class="sig-name descname">AIOERT</code><a class="headerlink" href="#Magboltz.Magboltz.AIOERT" title="Permalink to this definition">¶</a></dt>
@@ -61,7 +65,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.AKT">
 <code class="sig-name descname">AKT</code><a class="headerlink" href="#Magboltz.Magboltz.AKT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This indicates the amount of energy in the gas (it is equal to the Boltzman constant * absolute tempreture).</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ALIN">
@@ -76,12 +81,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ALPER">
 <code class="sig-name descname">ALPER</code><a class="headerlink" href="#Magboltz.Magboltz.ALPER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Error for ALPHA.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ALPHA">
 <code class="sig-name descname">ALPHA</code><a class="headerlink" href="#Magboltz.Magboltz.ALPHA" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Townsend coefficient.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ALPHAST">
@@ -96,12 +103,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ALPHSST">
 <code class="sig-name descname">ALPHSST</code><a class="headerlink" href="#Magboltz.Magboltz.ALPHSST" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Ionisation rate from SST - Steady State Townsend.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ALPP">
 <code class="sig-name descname">ALPP</code><a class="headerlink" href="#Magboltz.Magboltz.ALPP" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to represent the ionisation rate.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.AMGAS">
@@ -111,7 +120,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.AN">
 <code class="sig-name descname">AN</code><a class="headerlink" href="#Magboltz.Magboltz.AN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable that is equal to 100 * CORR * ALOSCH. Which is the number of molecules/cm^3.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ANGCT">
@@ -126,22 +136,26 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ANN">
 <code class="sig-name descname">ANN</code><a class="headerlink" href="#Magboltz.Magboltz.ANN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Array used to calculate the number of molecules/cm^3 for each gas.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.API">
 <code class="sig-name descname">API</code><a class="headerlink" href="#Magboltz.Magboltz.API" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>The value of PI.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ARY">
 <code class="sig-name descname">ARY</code><a class="headerlink" href="#Magboltz.Magboltz.ARY" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is Rydberg constant times hc in eV.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ATT">
 <code class="sig-name descname">ATT</code><a class="headerlink" href="#Magboltz.Magboltz.ATT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Townsend coefficient.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ATTATER">
@@ -151,7 +165,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ATTER">
 <code class="sig-name descname">ATTER</code><a class="headerlink" href="#Magboltz.Magboltz.ATTER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Error for ATT</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ATTERR">
@@ -181,7 +196,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ATTP">
 <code class="sig-name descname">ATTP</code><a class="headerlink" href="#Magboltz.Magboltz.ATTP" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to represent the attachement rate.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ATTSST">
@@ -191,27 +207,32 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.AVE">
 <code class="sig-name descname">AVE</code><a class="headerlink" href="#Magboltz.Magboltz.AVE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Mean electron energy.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.BMAG">
 <code class="sig-name descname">BMAG</code><a class="headerlink" href="#Magboltz.Magboltz.BMAG" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is the magnitude of the magentic field.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.BTHETA">
 <code class="sig-name descname">BTHETA</code><a class="headerlink" href="#Magboltz.Magboltz.BTHETA" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is the angle between the magnetic field and the electric field.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CF">
 <code class="sig-name descname">CF</code><a class="headerlink" href="#Magboltz.Magboltz.CF" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Collision frequency for each gas at every energy step for every data point.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CFN">
 <code class="sig-name descname">CFN</code><a class="headerlink" href="#Magboltz.Magboltz.CFN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Null collision frequency for each gas at every energy step for every data point.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CFNNT">
@@ -226,32 +247,38 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CONST1">
 <code class="sig-name descname">CONST1</code><a class="headerlink" href="#Magboltz.Magboltz.CONST1" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Constant that is equal to AWB / 2 * 1e-9.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CONST2">
 <code class="sig-name descname">CONST2</code><a class="headerlink" href="#Magboltz.Magboltz.CONST2" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Constant that is equal to CONST1 * 1e-2.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CONST3">
 <code class="sig-name descname">CONST3</code><a class="headerlink" href="#Magboltz.Magboltz.CONST3" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Constant that is equal to sqrt(0.2 * AWB) * 1e-9.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CONST4">
 <code class="sig-name descname">CONST4</code><a class="headerlink" href="#Magboltz.Magboltz.CONST4" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Constant that is equal to CONST3 * ALOSCH * 1e-15.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CONST5">
 <code class="sig-name descname">CONST5</code><a class="headerlink" href="#Magboltz.Magboltz.CONST5" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Constant that is equal to CONST3 / 2.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.CORR">
 <code class="sig-name descname">CORR</code><a class="headerlink" href="#Magboltz.Magboltz.CORR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to calculate the correlation constant between the pressure and tempreture. CORR=ABZERO*TORR/(ATMOS*(ABZERO+TEMPC)*100.0D0).</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DCX">
@@ -286,7 +313,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DEN">
 <code class="sig-name descname">DEN</code><a class="headerlink" href="#Magboltz.Magboltz.DEN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for AVE.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DENSY">
@@ -296,152 +324,182 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DFLER">
 <code class="sig-name descname">DFLER</code><a class="headerlink" href="#Magboltz.Magboltz.DFLER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage for DIFLN.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DFLER1">
 <code class="sig-name descname">DFLER1</code><a class="headerlink" href="#Magboltz.Magboltz.DFLER1" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DLOVMB</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DFTER">
 <code class="sig-name descname">DFTER</code><a class="headerlink" href="#Magboltz.Magboltz.DFTER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage for DIFTR.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DFTER1">
 <code class="sig-name descname">DFTER1</code><a class="headerlink" href="#Magboltz.Magboltz.DFTER1" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DTOVMB</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFLN">
 <code class="sig-name descname">DIFLN</code><a class="headerlink" href="#Magboltz.Magboltz.DIFLN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Longitudinal diffusion.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFTR">
 <code class="sig-name descname">DIFTR</code><a class="headerlink" href="#Magboltz.Magboltz.DIFTR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Transverse diffusion.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFXX">
 <code class="sig-name descname">DIFXX</code><a class="headerlink" href="#Magboltz.Magboltz.DIFXX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Diffusion on the x plane.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFXY">
 <code class="sig-name descname">DIFXY</code><a class="headerlink" href="#Magboltz.Magboltz.DIFXY" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Diffusion on the xy plane.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFXZ">
 <code class="sig-name descname">DIFXZ</code><a class="headerlink" href="#Magboltz.Magboltz.DIFXZ" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Diffusion on the xz plane.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFYY">
 <code class="sig-name descname">DIFYY</code><a class="headerlink" href="#Magboltz.Magboltz.DIFYY" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Diffusion on the y plane.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFYZ">
 <code class="sig-name descname">DIFYZ</code><a class="headerlink" href="#Magboltz.Magboltz.DIFYZ" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Diffusion on the yz plane.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DIFZZ">
 <code class="sig-name descname">DIFZZ</code><a class="headerlink" href="#Magboltz.Magboltz.DIFZZ" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Diffusion on the z plane.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DLERR">
 <code class="sig-name descname">DLERR</code><a class="headerlink" href="#Magboltz.Magboltz.DLERR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DLOUT.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DLMN">
 <code class="sig-name descname">DLMN</code><a class="headerlink" href="#Magboltz.Magboltz.DLMN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Longitudinal diffusion in microns/cm^0.5</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DLOUT">
 <code class="sig-name descname">DLOUT</code><a class="headerlink" href="#Magboltz.Magboltz.DLOUT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Steady State Townsend Longitudinal diffusion.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DLOVMB">
 <code class="sig-name descname">DLOVMB</code><a class="headerlink" href="#Magboltz.Magboltz.DLOVMB" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Longitudinal diffusion in EV.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DTERR">
 <code class="sig-name descname">DTERR</code><a class="headerlink" href="#Magboltz.Magboltz.DTERR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DTERR.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DTMN">
 <code class="sig-name descname">DTMN</code><a class="headerlink" href="#Magboltz.Magboltz.DTMN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Transverse diffusion in microns/cm^0.5.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DTOUT">
 <code class="sig-name descname">DTOUT</code><a class="headerlink" href="#Magboltz.Magboltz.DTOUT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Steady State Townsend Transverse diffusion.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DTOVMB">
 <code class="sig-name descname">DTOVMB</code><a class="headerlink" href="#Magboltz.Magboltz.DTOVMB" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Transverse diffusion in EV.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DWX">
 <code class="sig-name descname">DWX</code><a class="headerlink" href="#Magboltz.Magboltz.DWX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error on the x drift velocity.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DWY">
 <code class="sig-name descname">DWY</code><a class="headerlink" href="#Magboltz.Magboltz.DWY" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error on the y drift velocity.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DWZ">
 <code class="sig-name descname">DWZ</code><a class="headerlink" href="#Magboltz.Magboltz.DWZ" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error on the z drift velocity.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DXXER">
 <code class="sig-name descname">DXXER</code><a class="headerlink" href="#Magboltz.Magboltz.DXXER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DIFXX.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DXYER">
 <code class="sig-name descname">DXYER</code><a class="headerlink" href="#Magboltz.Magboltz.DXYER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DIFXY.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DXZER">
 <code class="sig-name descname">DXZER</code><a class="headerlink" href="#Magboltz.Magboltz.DXZER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DIFXZ.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DYYER">
 <code class="sig-name descname">DYYER</code><a class="headerlink" href="#Magboltz.Magboltz.DYYER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DIFYY.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DYZER">
 <code class="sig-name descname">DYZER</code><a class="headerlink" href="#Magboltz.Magboltz.DYZER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DIFYZ.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.DZZER">
 <code class="sig-name descname">DZZER</code><a class="headerlink" href="#Magboltz.Magboltz.DZZER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for DIFZZ.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.E">
 <code class="sig-name descname">E</code><a class="headerlink" href="#Magboltz.Magboltz.E" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Energy ar each energy step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.EC0">
@@ -456,12 +514,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.EFIELD">
 <code class="sig-name descname">EFIELD</code><a class="headerlink" href="#Magboltz.Magboltz.EFIELD" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Electric field [V/cm].</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.EFINAL">
 <code class="sig-name descname">EFINAL</code><a class="headerlink" href="#Magboltz.Magboltz.EFINAL" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is the upper limit for the electron energy integration.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.EFL">
@@ -506,7 +566,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.EOVB">
 <code class="sig-name descname">EOVB</code><a class="headerlink" href="#Magboltz.Magboltz.EOVB" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is a constant that is equal to the electric field / magentic field * 1e-9.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.EPT">
@@ -516,7 +577,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.EROOT">
 <code class="sig-name descname">EROOT</code><a class="headerlink" href="#Magboltz.Magboltz.EROOT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>The square root of each energy step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ES">
@@ -536,12 +598,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ESTART">
 <code class="sig-name descname">ESTART</code><a class="headerlink" href="#Magboltz.Magboltz.ESTART" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>The lower limit of the electron energy integration.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ESTEP">
 <code class="sig-name descname">ESTEP</code><a class="headerlink" href="#Magboltz.Magboltz.ESTEP" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Magboltz does the electron energy integration in 4000 steps this variable has the difference in energy between each step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ETPL">
@@ -566,7 +630,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.FRAC">
 <code class="sig-name descname">FRAC</code><a class="headerlink" href="#Magboltz.Magboltz.FRAC" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Array used to store the percentage of each gas in the mixture.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IARRY">
@@ -581,7 +646,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ICOLL">
 <code class="sig-name descname">ICOLL</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLL" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of collisions for Ith gas at the Jth type.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ICOLLNT">
@@ -596,7 +662,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ICOLNN">
 <code class="sig-name descname">ICOLNN</code><a class="headerlink" href="#Magboltz.Magboltz.ICOLNN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Null scatter sum for the Ith gas and the Jth location.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ICOLNNNT">
@@ -611,12 +678,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IELOW">
 <code class="sig-name descname">IELOW</code><a class="headerlink" href="#Magboltz.Magboltz.IELOW" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Flag used to indicate if the energy limit has been crossed.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IFAKE">
 <code class="sig-name descname">IFAKE</code><a class="headerlink" href="#Magboltz.Magboltz.IFAKE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Fake ionisation counter.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IFAKED">
@@ -641,7 +710,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IPEN">
 <code class="sig-name descname">IPEN</code><a class="headerlink" href="#Magboltz.Magboltz.IPEN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to indicate the inclusion of penning effects.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IPL">
@@ -651,7 +721,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IPLAST">
 <code class="sig-name descname">IPLAST</code><a class="headerlink" href="#Magboltz.Magboltz.IPLAST" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of momentum cross section data points for each gas.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IPLASTNT">
@@ -696,12 +767,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ITHRM">
 <code class="sig-name descname">ITHRM</code><a class="headerlink" href="#Magboltz.Magboltz.ITHRM" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to indicate wethier to include thermal motion or not.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ITMAX">
 <code class="sig-name descname">ITMAX</code><a class="headerlink" href="#Magboltz.Magboltz.ITMAX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of samples to be taken in the Monte functions.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.IZFINAL">
@@ -726,7 +799,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NANISO">
 <code class="sig-name descname">NANISO</code><a class="headerlink" href="#Magboltz.Magboltz.NANISO" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to indicate the type of the elastic angular distribtions.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NC0">
@@ -746,12 +820,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NCORLN">
 <code class="sig-name descname">NCORLN</code><a class="headerlink" href="#Magboltz.Magboltz.NCORLN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Long decorrelation length</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NCORST">
 <code class="sig-name descname">NCORST</code><a class="headerlink" href="#Magboltz.Magboltz.NCORST" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Long decorrelation step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NESST">
@@ -786,42 +862,50 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NGAS">
 <code class="sig-name descname">NGAS</code><a class="headerlink" href="#Magboltz.Magboltz.NGAS" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of gases in the mixture.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NGASN">
 <code class="sig-name descname">NGASN</code><a class="headerlink" href="#Magboltz.Magboltz.NGASN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Array used to store the number of the 6 gases in the mixture.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NIN">
 <code class="sig-name descname">NIN</code><a class="headerlink" href="#Magboltz.Magboltz.NIN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of momentum cross section data points for types other than attachment and ionisation.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NISO">
 <code class="sig-name descname">NISO</code><a class="headerlink" href="#Magboltz.Magboltz.NISO" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Anisotropic flag used if anisotropic scattering data is detected.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NMAX">
 <code class="sig-name descname">NMAX</code><a class="headerlink" href="#Magboltz.Magboltz.NMAX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of the simulated collisions * N.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NMAXOLD">
 <code class="sig-name descname">NMAXOLD</code><a class="headerlink" href="#Magboltz.Magboltz.NMAXOLD" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>NMAX for SST - Steady State Townsend</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NNULL">
 <code class="sig-name descname">NNULL</code><a class="headerlink" href="#Magboltz.Magboltz.NNULL" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of null collisions.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NPLAST">
 <code class="sig-name descname">NPLAST</code><a class="headerlink" href="#Magboltz.Magboltz.NPLAST" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of momentum cross section data points for null collisions.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NPLASTNT">
@@ -831,12 +915,14 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NSCALE">
 <code class="sig-name descname">NSCALE</code><a class="headerlink" href="#Magboltz.Magboltz.NSCALE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Constant equal to 40000000.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.NSTEP">
 <code class="sig-name descname">NSTEP</code><a class="headerlink" href="#Magboltz.Magboltz.NSTEP" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Steps for the electron energy integration.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.PENFRA">
@@ -851,7 +937,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.PHI">
 <code class="sig-name descname">PHI</code><a class="headerlink" href="#Magboltz.Magboltz.PHI" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Angle used to calculate initial direction cosines in the XY plane. Angle from the X axis.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.PIR2">
@@ -871,11 +958,6 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.QEL">
 <code class="sig-name descname">QEL</code><a class="headerlink" href="#Magboltz.Magboltz.QEL" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="Magboltz.Magboltz.QELM">
-<code class="sig-name descname">QELM</code><a class="headerlink" href="#Magboltz.Magboltz.QELM" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -916,22 +998,26 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.RALPER">
 <code class="sig-name descname">RALPER</code><a class="headerlink" href="#Magboltz.Magboltz.RALPER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for RALPHA.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.RALPHA">
 <code class="sig-name descname">RALPHA</code><a class="headerlink" href="#Magboltz.Magboltz.RALPHA" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>PT ionisation rate.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.RATOFER">
 <code class="sig-name descname">RATOFER</code><a class="headerlink" href="#Magboltz.Magboltz.RATOFER" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for RATTOF</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.RATTOF">
 <code class="sig-name descname">RATTOF</code><a class="headerlink" href="#Magboltz.Magboltz.RATTOF" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>PT attachment rate.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.RATTOFER">
@@ -976,7 +1062,8 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.RSTART">
 <code class="sig-name descname">RSTART</code><a class="headerlink" href="#Magboltz.Magboltz.RSTART" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Random number generator seed. Not used at the moment.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.SCLENUL">
@@ -991,22 +1078,26 @@ It has most of the needed arrays, and variables.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.SMALL">
 <code class="sig-name descname">SMALL</code><a class="headerlink" href="#Magboltz.Magboltz.SMALL" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This constant is equal to 1e-20. Used to be a small constant.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.SPEC">
 <code class="sig-name descname">SPEC</code><a class="headerlink" href="#Magboltz.Magboltz.SPEC" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of collisions in the Ith energy step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.SSTMIN">
 <code class="sig-name descname">SSTMIN</code><a class="headerlink" href="#Magboltz.Magboltz.SSTMIN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to represent the minmum difference between ALPP and ATTP to include spatial gradients. SST - Steady State Townsend Parameters.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ST">
 <code class="sig-name descname">ST</code><a class="headerlink" href="#Magboltz.Magboltz.ST" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to calculate the sum of the collision times in the simulation.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="Magboltz.Magboltz.Start">
@@ -1024,12 +1115,14 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TCF">
 <code class="sig-name descname">TCF</code><a class="headerlink" href="#Magboltz.Magboltz.TCF" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Total collision frequency for each gas at every energy step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TCFMAX">
 <code class="sig-name descname">TCFMAX</code><a class="headerlink" href="#Magboltz.Magboltz.TCFMAX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Maximum value of collision frequency for each gas.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TCFMAXNT">
@@ -1039,17 +1132,20 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TCFMX">
 <code class="sig-name descname">TCFMX</code><a class="headerlink" href="#Magboltz.Magboltz.TCFMX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Sum of the maximum collision frequency of each gas.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TCFMXG">
 <code class="sig-name descname">TCFMXG</code><a class="headerlink" href="#Magboltz.Magboltz.TCFMXG" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Fraction of the maximum collision frequency of each gas over the sum of the maximum collision frequencies of all the gases.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TCFN">
 <code class="sig-name descname">TCFN</code><a class="headerlink" href="#Magboltz.Magboltz.TCFN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Total null collision frequency for each gas at every energy step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TCFNNT">
@@ -1064,7 +1160,8 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TEMPC">
 <code class="sig-name descname">TEMPC</code><a class="headerlink" href="#Magboltz.Magboltz.TEMPC" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is the tempreture in degrees Centigrade.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TFINAL">
@@ -1074,27 +1171,32 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TGAS">
 <code class="sig-name descname">TGAS</code><a class="headerlink" href="#Magboltz.Magboltz.TGAS" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Absolute tempreture in Kelvin.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.THETA">
 <code class="sig-name descname">THETA</code><a class="headerlink" href="#Magboltz.Magboltz.THETA" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Collision scattering angle from the Z plane.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TIME">
 <code class="sig-name descname">TIME</code><a class="headerlink" href="#Magboltz.Magboltz.TIME" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Number of collisions in the Ith time step.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TMAX">
 <code class="sig-name descname">TMAX</code><a class="headerlink" href="#Magboltz.Magboltz.TMAX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Maximum collision time. Default is set to 100.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TMAX1">
 <code class="sig-name descname">TMAX1</code><a class="headerlink" href="#Magboltz.Magboltz.TMAX1" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This variable is used to store the maximum collision time in the simulation.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TMSPL">
@@ -1279,7 +1381,8 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TORR">
 <code class="sig-name descname">TORR</code><a class="headerlink" href="#Magboltz.Magboltz.TORR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is the pressure in Torr.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.TS">
@@ -1339,22 +1442,26 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.VAN">
 <code class="sig-name descname">VAN</code><a class="headerlink" href="#Magboltz.Magboltz.VAN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable that is equal to 100 * CORR * CONST4 * 1e15</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.VANN">
 <code class="sig-name descname">VANN</code><a class="headerlink" href="#Magboltz.Magboltz.VANN" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Array used to calculate the VAN for each gas.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.VDERR">
 <code class="sig-name descname">VDERR</code><a class="headerlink" href="#Magboltz.Magboltz.VDERR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for VDOUT.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.VDOUT">
 <code class="sig-name descname">VDOUT</code><a class="headerlink" href="#Magboltz.Magboltz.VDOUT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>VD for Steady State Townsend Parameters.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.VDST">
@@ -1364,7 +1471,8 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.VTMB">
 <code class="sig-name descname">VTMB</code><a class="headerlink" href="#Magboltz.Magboltz.VTMB" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Maxwell Boltzman velocity factor for each gas component.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.VXTPL">
@@ -1394,7 +1502,8 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.WB">
 <code class="sig-name descname">WB</code><a class="headerlink" href="#Magboltz.Magboltz.WB" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This is the angular speed of rotation see cycltron frequency.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.WKLM">
@@ -1419,32 +1528,38 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.WSERR">
 <code class="sig-name descname">WSERR</code><a class="headerlink" href="#Magboltz.Magboltz.WSERR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Percentage error for WSOUT.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.WSOUT">
 <code class="sig-name descname">WSOUT</code><a class="headerlink" href="#Magboltz.Magboltz.WSOUT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>VD for Steady State Townsend Parameters.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.WX">
 <code class="sig-name descname">WX</code><a class="headerlink" href="#Magboltz.Magboltz.WX" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Drift velocity on the x axis.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.WY">
 <code class="sig-name descname">WY</code><a class="headerlink" href="#Magboltz.Magboltz.WY" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Drift velocity on the y axis.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.WZ">
 <code class="sig-name descname">WZ</code><a class="headerlink" href="#Magboltz.Magboltz.WZ" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Drift velocity on the z axis.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.X">
 <code class="sig-name descname">X</code><a class="headerlink" href="#Magboltz.Magboltz.X" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to represent the x position in the simulation.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.XID">
@@ -1494,7 +1609,8 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.Y">
 <code class="sig-name descname">Y</code><a class="headerlink" href="#Magboltz.Magboltz.Y" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to represent the y position in the simulation.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.YS">
@@ -1534,7 +1650,8 @@ in the the parent object of this function.</p>
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.Z">
 <code class="sig-name descname">Z</code><a class="headerlink" href="#Magboltz.Magboltz.Z" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Variable used to represent the z position in the simulation.</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="Magboltz.Magboltz.ZFINAL">
