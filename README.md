@@ -1,2 +1,2 @@
 # PyBoltz-Documentation
-Sphinx documentation for Magboltz. 
+Sphinx documentation for PyBoltz. 
