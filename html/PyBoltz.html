@@ -1,0 +1,1014 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PyBoltz module &#8212; PyBoltz 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PyBoltzRun module" href="PyBoltzRun.html" />
+    <link rel="prev" title="Monte package" href="Monte.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="PyBoltzRun.html" title="PyBoltzRun module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Monte.html" title="Monte package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyBoltz 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-PyBoltz">
+<span id="pyboltz-module"></span><h1>PyBoltz module<a class="headerlink" href="#module-PyBoltz" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="PyBoltz.PyBoltz">
+<em class="property">class </em><code class="descclassname">PyBoltz.</code><code class="descname">PyBoltz</code><a class="headerlink" href="#PyBoltz.PyBoltz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This is the main object used to start the simulation, as well as store the information of the simulation.
+It has most of the needed arrays, and variables.</p>
+<p>More about Magboltz:</p>
+<p><a class="reference external" href="http://cyclo.mit.edu/drift/www/aboutMagboltz.html/">Magboltz_Documentation</a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If the variable has a “NT” at the end, that variable has the same function as its counterpart without a “NT” at the end.</p>
+</div>
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ALIN">
+<code class="descname">ALIN</code><a class="headerlink" href="#PyBoltz.PyBoltz.ALIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AMGAS">
+<code class="descname">AMGAS</code><a class="headerlink" href="#PyBoltz.PyBoltz.AMGAS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AN">
+<code class="descname">AN</code><a class="headerlink" href="#PyBoltz.PyBoltz.AN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable that is equal to 100 * PresTempCor * ALOSCH. Which is the number of molecules/cm^3.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AngleCut">
+<code class="descname">AngleCut</code><a class="headerlink" href="#PyBoltz.PyBoltz.AngleCut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AngleCutNT">
+<code class="descname">AngleCutNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.AngleCutNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AngleFromX">
+<code class="descname">AngleFromX</code><a class="headerlink" href="#PyBoltz.PyBoltz.AngleFromX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Angle used to calculate initial direction cosines in the XY plane. Angle from the X axis.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AngleFromZ">
+<code class="descname">AngleFromZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.AngleFromZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collision scattering angle from the Z plane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AngularModel">
+<code class="descname">AngularModel</code><a class="headerlink" href="#PyBoltz.PyBoltz.AngularModel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AngularModelNT">
+<code class="descname">AngularModelNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.AngularModelNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AngularSpeedOfRotation">
+<code class="descname">AngularSpeedOfRotation</code><a class="headerlink" href="#PyBoltz.PyBoltz.AngularSpeedOfRotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the angular speed of rotation see cycltron frequency.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AnisotropicDetected">
+<code class="descname">AnisotropicDetected</code><a class="headerlink" href="#PyBoltz.PyBoltz.AnisotropicDetected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Anisotropic flag used if anisotropic scattering data is detected.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AttachmentRate">
+<code class="descname">AttachmentRate</code><a class="headerlink" href="#PyBoltz.PyBoltz.AttachmentRate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attachment Rate.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AttachmentRateError">
+<code class="descname">AttachmentRateError</code><a class="headerlink" href="#PyBoltz.PyBoltz.AttachmentRateError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage Error for AttachmentRate</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.AttachmentSectionSum">
+<code class="descname">AttachmentSectionSum</code><a class="headerlink" href="#PyBoltz.PyBoltz.AttachmentSectionSum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.BFieldAngle">
+<code class="descname">BFieldAngle</code><a class="headerlink" href="#PyBoltz.PyBoltz.BFieldAngle" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the angle between the magnetic field and the electric field.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.BFieldMag">
+<code class="descname">BFieldMag</code><a class="headerlink" href="#PyBoltz.PyBoltz.BFieldMag" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the magnitude of the magentic field.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.BFieldMode">
+<code class="descname">BFieldMode</code><a class="headerlink" href="#PyBoltz.PyBoltz.BFieldMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Which integration mode to use</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CONST1">
+<code class="descname">CONST1</code><a class="headerlink" href="#PyBoltz.PyBoltz.CONST1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constant that is equal to (electron mass charge ratio) / 2 * 1e-9.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CONST2">
+<code class="descname">CONST2</code><a class="headerlink" href="#PyBoltz.PyBoltz.CONST2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constant that is equal to CONST1 * 1e-2.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CONST3">
+<code class="descname">CONST3</code><a class="headerlink" href="#PyBoltz.PyBoltz.CONST3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constant that is equal to sqrt(0.2 * (electron mass charge ratio)) * 1e-9.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CollisionEnergies">
+<code class="descname">CollisionEnergies</code><a class="headerlink" href="#PyBoltz.PyBoltz.CollisionEnergies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of collisions in the Ith energy step.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CollisionFrequency">
+<code class="descname">CollisionFrequency</code><a class="headerlink" href="#PyBoltz.PyBoltz.CollisionFrequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collision frequency for each gas at every energy step for every data point.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CollisionFrequencyNT">
+<code class="descname">CollisionFrequencyNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.CollisionFrequencyNT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collision frequency for each energy step, at each cross section point. This is used for when EnableThermalMotion = 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CollisionTimes">
+<code class="descname">CollisionTimes</code><a class="headerlink" href="#PyBoltz.PyBoltz.CollisionTimes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of collisions in the Ith time step.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CollisionsPerGasPerType">
+<code class="descname">CollisionsPerGasPerType</code><a class="headerlink" href="#PyBoltz.PyBoltz.CollisionsPerGasPerType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of collisions for Ith gas at the Jth type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CollisionsPerGasPerTypeNT">
+<code class="descname">CollisionsPerGasPerTypeNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.CollisionsPerGasPerTypeNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ConsoleOutputFlag">
+<code class="descname">ConsoleOutputFlag</code><a class="headerlink" href="#PyBoltz.PyBoltz.ConsoleOutputFlag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag used to stop console printouts</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.CrossSectionSum">
+<code class="descname">CrossSectionSum</code><a class="headerlink" href="#PyBoltz.PyBoltz.CrossSectionSum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.Decor_Colls">
+<code class="descname">Decor_Colls</code><a class="headerlink" href="#PyBoltz.PyBoltz.Decor_Colls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of collisions for decorrelation - (Decorrelation length).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.Decor_LookBacks">
+<code class="descname">Decor_LookBacks</code><a class="headerlink" href="#PyBoltz.PyBoltz.Decor_LookBacks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of decorrelation lookbacks.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.Decor_Step">
+<code class="descname">Decor_Step</code><a class="headerlink" href="#PyBoltz.PyBoltz.Decor_Step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorrelation steps.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.DiffusionX">
+<code class="descname">DiffusionX</code><a class="headerlink" href="#PyBoltz.PyBoltz.DiffusionX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diffusion on the x plane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.DiffusionXY">
+<code class="descname">DiffusionXY</code><a class="headerlink" href="#PyBoltz.PyBoltz.DiffusionXY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diffusion on the xy plane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.DiffusionXZ">
+<code class="descname">DiffusionXZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.DiffusionXZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diffusion on the xz plane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.DiffusionY">
+<code class="descname">DiffusionY</code><a class="headerlink" href="#PyBoltz.PyBoltz.DiffusionY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diffusion on the y plane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.DiffusionYZ">
+<code class="descname">DiffusionYZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.DiffusionYZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diffusion on the yz plane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.DiffusionZ">
+<code class="descname">DiffusionZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.DiffusionZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diffusion on the z plane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.E">
+<code class="descname">E</code><a class="headerlink" href="#PyBoltz.PyBoltz.E" title="Permalink to this definition">¶</a></dt>
+<dd><p>Energy ar each energy step.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EC0NT">
+<code class="descname">EC0NT</code><a class="headerlink" href="#PyBoltz.PyBoltz.EC0NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EField">
+<code class="descname">EField</code><a class="headerlink" href="#PyBoltz.PyBoltz.EField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Electric field [V/cm].</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EFieldOverBField">
+<code class="descname">EFieldOverBField</code><a class="headerlink" href="#PyBoltz.PyBoltz.EFieldOverBField" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a constant that is equal to the electric field / magentic field * 1e-9.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ElasticCrossSection">
+<code class="descname">ElasticCrossSection</code><a class="headerlink" href="#PyBoltz.PyBoltz.ElasticCrossSection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ElectronEnergyStep">
+<code class="descname">ElectronEnergyStep</code><a class="headerlink" href="#PyBoltz.PyBoltz.ElectronEnergyStep" title="Permalink to this definition">¶</a></dt>
+<dd><p>PyBoltz does the electron energy integration in 4000 steps this variable has the difference in energy between each step.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ElectronNumChange">
+<code class="descname">ElectronNumChange</code><a class="headerlink" href="#PyBoltz.PyBoltz.ElectronNumChange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ElectronNumChangeNT">
+<code class="descname">ElectronNumChangeNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.ElectronNumChangeNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EnablePenning">
+<code class="descname">EnablePenning</code><a class="headerlink" href="#PyBoltz.PyBoltz.EnablePenning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to indicate the inclusion of penning effects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EnableThermalMotion">
+<code class="descname">EnableThermalMotion</code><a class="headerlink" href="#PyBoltz.PyBoltz.EnableThermalMotion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to indicate wethier to include thermal motion or not.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EnergyLevels">
+<code class="descname">EnergyLevels</code><a class="headerlink" href="#PyBoltz.PyBoltz.EnergyLevels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EnergyLevelsNT">
+<code class="descname">EnergyLevelsNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.EnergyLevelsNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.EnergySteps">
+<code class="descname">EnergySteps</code><a class="headerlink" href="#PyBoltz.PyBoltz.EnergySteps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Steps for the electron energy integration.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ErrorDiffusionX">
+<code class="descname">ErrorDiffusionX</code><a class="headerlink" href="#PyBoltz.PyBoltz.ErrorDiffusionX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DIFXX.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ErrorDiffusionXY">
+<code class="descname">ErrorDiffusionXY</code><a class="headerlink" href="#PyBoltz.PyBoltz.ErrorDiffusionXY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DIFXY.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ErrorDiffusionXZ">
+<code class="descname">ErrorDiffusionXZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.ErrorDiffusionXZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DIFXZ.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ErrorDiffusionY">
+<code class="descname">ErrorDiffusionY</code><a class="headerlink" href="#PyBoltz.PyBoltz.ErrorDiffusionY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DIFYY.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ErrorDiffusionYZ">
+<code class="descname">ErrorDiffusionYZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.ErrorDiffusionYZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DIFYZ.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ErrorDiffusionZ">
+<code class="descname">ErrorDiffusionZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.ErrorDiffusionZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DIFZZ.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.FakeIonizations">
+<code class="descname">FakeIonizations</code><a class="headerlink" href="#PyBoltz.PyBoltz.FakeIonizations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fake ionisation counter.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.FakeIonizationsD">
+<code class="descname">FakeIonizationsD</code><a class="headerlink" href="#PyBoltz.PyBoltz.FakeIonizationsD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.FakeIonizationsT">
+<code class="descname">FakeIonizationsT</code><a class="headerlink" href="#PyBoltz.PyBoltz.FakeIonizationsT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.FinalElectronEnergy">
+<code class="descname">FinalElectronEnergy</code><a class="headerlink" href="#PyBoltz.PyBoltz.FinalElectronEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the upper limit for the electron energy integration.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.GasFractions">
+<code class="descname">GasFractions</code><a class="headerlink" href="#PyBoltz.PyBoltz.GasFractions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array used to store the percentage of each gas in the mixture.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.GasIDs">
+<code class="descname">GasIDs</code><a class="headerlink" href="#PyBoltz.PyBoltz.GasIDs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array used to store the number of the 6 gases in the mixture.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltz.PyBoltz.GetSimFunctions">
+<code class="descname">GetSimFunctions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltz.PyBoltz.GetSimFunctions" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function picks which sim functions to use, depending on applied fields and thermal motion.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ICOLN">
+<code class="descname">ICOLN</code><a class="headerlink" href="#PyBoltz.PyBoltz.ICOLN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ICOLNN">
+<code class="descname">ICOLNN</code><a class="headerlink" href="#PyBoltz.PyBoltz.ICOLNN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Null scatter sum for the Ith gas and the Jth location.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ICOLNNNT">
+<code class="descname">ICOLNNNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.ICOLNNNT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Null scatter sum for each gas at each sample. This is used for when EnableThermalMotion = 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ICOLNNT">
+<code class="descname">ICOLNNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.ICOLNNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ISIZE">
+<code class="descname">ISIZE</code><a class="headerlink" href="#PyBoltz.PyBoltz.ISIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ISIZENT">
+<code class="descname">ISIZENT</code><a class="headerlink" href="#PyBoltz.PyBoltz.ISIZENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.InelasticCrossSection">
+<code class="descname">InelasticCrossSection</code><a class="headerlink" href="#PyBoltz.PyBoltz.InelasticCrossSection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.InelasticCrossSectionPerGas">
+<code class="descname">InelasticCrossSectionPerGas</code><a class="headerlink" href="#PyBoltz.PyBoltz.InelasticCrossSectionPerGas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.InitialElectronEnergy">
+<code class="descname">InitialElectronEnergy</code><a class="headerlink" href="#PyBoltz.PyBoltz.InitialElectronEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><p>The lower limit of the electron energy integration.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.InteractionType">
+<code class="descname">InteractionType</code><a class="headerlink" href="#PyBoltz.PyBoltz.InteractionType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.InteractionTypeNT">
+<code class="descname">InteractionTypeNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.InteractionTypeNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.IonisationRate">
+<code class="descname">IonisationRate</code><a class="headerlink" href="#PyBoltz.PyBoltz.IonisationRate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ionisation rate.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.IonisationRateError">
+<code class="descname">IonisationRateError</code><a class="headerlink" href="#PyBoltz.PyBoltz.IonisationRateError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage Error for IonisationRate</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.IonizationCrossSection">
+<code class="descname">IonizationCrossSection</code><a class="headerlink" href="#PyBoltz.PyBoltz.IonizationCrossSection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.LAST">
+<code class="descname">LAST</code><a class="headerlink" href="#PyBoltz.PyBoltz.LAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.LIN">
+<code class="descname">LIN</code><a class="headerlink" href="#PyBoltz.PyBoltz.LIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.LongitudinalDiffusion">
+<code class="descname">LongitudinalDiffusion</code><a class="headerlink" href="#PyBoltz.PyBoltz.LongitudinalDiffusion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Longitudinal diffusion.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.LongitudinalDiffusion1">
+<code class="descname">LongitudinalDiffusion1</code><a class="headerlink" href="#PyBoltz.PyBoltz.LongitudinalDiffusion1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Longitudinal diffusion in microns/cm^0.5</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.LongitudinalDiffusion1Error">
+<code class="descname">LongitudinalDiffusion1Error</code><a class="headerlink" href="#PyBoltz.PyBoltz.LongitudinalDiffusion1Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DL1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.LongitudinalDiffusionError">
+<code class="descname">LongitudinalDiffusionError</code><a class="headerlink" href="#PyBoltz.PyBoltz.LongitudinalDiffusionError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage for DIFLN.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MaxCollisionFreq">
+<code class="descname">MaxCollisionFreq</code><a class="headerlink" href="#PyBoltz.PyBoltz.MaxCollisionFreq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum value of collision frequency for each gas.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MaxCollisionFreqNT">
+<code class="descname">MaxCollisionFreqNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.MaxCollisionFreqNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MaxCollisionFreqTotal">
+<code class="descname">MaxCollisionFreqTotal</code><a class="headerlink" href="#PyBoltz.PyBoltz.MaxCollisionFreqTotal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sum of the maximum collision frequency of each gas.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MaxCollisionFreqTotalG">
+<code class="descname">MaxCollisionFreqTotalG</code><a class="headerlink" href="#PyBoltz.PyBoltz.MaxCollisionFreqTotalG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fraction of the maximum collision frequency of each gas over the sum of the maximum collision frequencies of all the gases.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MaxCollisionTime">
+<code class="descname">MaxCollisionTime</code><a class="headerlink" href="#PyBoltz.PyBoltz.MaxCollisionTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum collision time. Default is set to 100.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MaxNumberOfCollisions">
+<code class="descname">MaxNumberOfCollisions</code><a class="headerlink" href="#PyBoltz.PyBoltz.MaxNumberOfCollisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of the simulated collisions * N.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MaximumCollisionTime">
+<code class="descname">MaximumCollisionTime</code><a class="headerlink" href="#PyBoltz.PyBoltz.MaximumCollisionTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>This variable is used to store the maximum collision time in the simulation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MeanCollisionTime">
+<code class="descname">MeanCollisionTime</code><a class="headerlink" href="#PyBoltz.PyBoltz.MeanCollisionTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mean collision time. Calculated using a moving average filter where it is equal to 0.9 * MeanCollisionTime + 0.1 * NewTime</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MeanElectronEnergy">
+<code class="descname">MeanElectronEnergy</code><a class="headerlink" href="#PyBoltz.PyBoltz.MeanElectronEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mean electron energy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MeanElectronEnergyError">
+<code class="descname">MeanElectronEnergyError</code><a class="headerlink" href="#PyBoltz.PyBoltz.MeanElectronEnergyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for AVE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MixObject">
+<code class="descname">MixObject</code><a class="headerlink" href="#PyBoltz.PyBoltz.MixObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.MoleculesPerCm3PerGas">
+<code class="descname">MoleculesPerCm3PerGas</code><a class="headerlink" href="#PyBoltz.PyBoltz.MoleculesPerCm3PerGas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array used to calculate the number of molecules/cm^3 for each gas.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NC0">
+<code class="descname">NC0</code><a class="headerlink" href="#PyBoltz.PyBoltz.NC0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NC0NT">
+<code class="descname">NC0NT</code><a class="headerlink" href="#PyBoltz.PyBoltz.NC0NT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NESST">
+<code class="descname">NESST</code><a class="headerlink" href="#PyBoltz.PyBoltz.NESST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.N_Inelastic">
+<code class="descname">N_Inelastic</code><a class="headerlink" href="#PyBoltz.PyBoltz.N_Inelastic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of momentum cross section data points for types other than attachment and ionisation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NullCollisionFreq">
+<code class="descname">NullCollisionFreq</code><a class="headerlink" href="#PyBoltz.PyBoltz.NullCollisionFreq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Null collision frequency for each gas at every energy step for every data point.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NullCollisionFreqNT">
+<code class="descname">NullCollisionFreqNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.NullCollisionFreqNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NumMomCrossSectionPoints">
+<code class="descname">NumMomCrossSectionPoints</code><a class="headerlink" href="#PyBoltz.PyBoltz.NumMomCrossSectionPoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of momentum cross section data points for each gas.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NumMomCrossSectionPointsNT">
+<code class="descname">NumMomCrossSectionPointsNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.NumMomCrossSectionPointsNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NumMomCrossSectionPointsNull">
+<code class="descname">NumMomCrossSectionPointsNull</code><a class="headerlink" href="#PyBoltz.PyBoltz.NumMomCrossSectionPointsNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of momentum cross section data points for null collisions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NumMomCrossSectionPointsNullNT">
+<code class="descname">NumMomCrossSectionPointsNullNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.NumMomCrossSectionPointsNullNT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to store the number of cross section points for null cross section points. This is used for when EnableThermalMotion = 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NumSamples">
+<code class="descname">NumSamples</code><a class="headerlink" href="#PyBoltz.PyBoltz.NumSamples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of electron samples</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.NumberOfGases">
+<code class="descname">NumberOfGases</code><a class="headerlink" href="#PyBoltz.PyBoltz.NumberOfGases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of gases in the mixture.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.PIR2">
+<code class="descname">PIR2</code><a class="headerlink" href="#PyBoltz.PyBoltz.PIR2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.PenningFraction">
+<code class="descname">PenningFraction</code><a class="headerlink" href="#PyBoltz.PyBoltz.PenningFraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>PenningFraction of each gas</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.PenningFractionNT">
+<code class="descname">PenningFractionNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.PenningFractionNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.PresTempCor">
+<code class="descname">PresTempCor</code><a class="headerlink" href="#PyBoltz.PyBoltz.PresTempCor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to calculate the correlation constant between the pressure and tempreture. PresTempCor=ABZERO*Pressure/(ATMOS*(ABZERO+TemperatureC)*100.0D0).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.PressureTorr">
+<code class="descname">PressureTorr</code><a class="headerlink" href="#PyBoltz.PyBoltz.PressureTorr" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the pressure in Torr.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.RGas">
+<code class="descname">RGas</code><a class="headerlink" href="#PyBoltz.PyBoltz.RGas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.RGasNT">
+<code class="descname">RGasNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.RGasNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.RandomMaxBoltzArray">
+<code class="descname">RandomMaxBoltzArray</code><a class="headerlink" href="#PyBoltz.PyBoltz.RandomMaxBoltzArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores randomly drawn max boltz numbers</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.RandomSeed">
+<code class="descname">RandomSeed</code><a class="headerlink" href="#PyBoltz.PyBoltz.RandomSeed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Random number generator seed. Not used at the moment.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ReducedAttachment">
+<code class="descname">ReducedAttachment</code><a class="headerlink" href="#PyBoltz.PyBoltz.ReducedAttachment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to represent the attachement rate.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ReducedIonization">
+<code class="descname">ReducedIonization</code><a class="headerlink" href="#PyBoltz.PyBoltz.ReducedIonization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to represent the ionisation rate.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.RelativeIonMinusAttachCrossSection">
+<code class="descname">RelativeIonMinusAttachCrossSection</code><a class="headerlink" href="#PyBoltz.PyBoltz.RelativeIonMinusAttachCrossSection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.RhydbergConst">
+<code class="descname">RhydbergConst</code><a class="headerlink" href="#PyBoltz.PyBoltz.RhydbergConst" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is Rydberg constant times hc in eV.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ScaleNull">
+<code class="descname">ScaleNull</code><a class="headerlink" href="#PyBoltz.PyBoltz.ScaleNull" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ScaleNullNT">
+<code class="descname">ScaleNullNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.ScaleNullNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ScatteringParameter">
+<code class="descname">ScatteringParameter</code><a class="headerlink" href="#PyBoltz.PyBoltz.ScatteringParameter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ScatteringParameterNT">
+<code class="descname">ScatteringParameterNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.ScatteringParameterNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyBoltz.PyBoltz.SetExtraParameters">
+<code class="descname">SetExtraParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltz.PyBoltz.SetExtraParameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.SmallNumber">
+<code class="descname">SmallNumber</code><a class="headerlink" href="#PyBoltz.PyBoltz.SmallNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>This constant is equal to 1e-20. Used to be a small constant.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.SqrtEnergy">
+<code class="descname">SqrtEnergy</code><a class="headerlink" href="#PyBoltz.PyBoltz.SqrtEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><p>The square root of each energy step.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltz.PyBoltz.Start">
+<code class="descname">Start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltz.PyBoltz.Start" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the main function that starts the magboltz simulation/calculation.</p>
+<p>The simulation starts by calculating the momentum cross section values for the requested gas mixture. If FinalElectronEnergy
+is equal to 0.0 it will then keep calling the EnergyLimit functions and the Mixer functions to find the electron
+Integration limit.</p>
+<p>Finally PyBoltz calls the Monte carlo functions, which is where the main simulation happens. The outputs are stored
+in the the parent object of this function.</p>
+<p>For more info on the main output variables check the git repository readme:
+<a class="reference external" href="https://github.com/UTA-REST/MAGBOLTZ-py/">PyBoltz repository</a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TemperatureCentigrade">
+<code class="descname">TemperatureCentigrade</code><a class="headerlink" href="#PyBoltz.PyBoltz.TemperatureCentigrade" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the tempreture in degrees Centigrade.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TemperatureKelvin">
+<code class="descname">TemperatureKelvin</code><a class="headerlink" href="#PyBoltz.PyBoltz.TemperatureKelvin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Absolute tempreture in Kelvin.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.ThermalEnergy">
+<code class="descname">ThermalEnergy</code><a class="headerlink" href="#PyBoltz.PyBoltz.ThermalEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><p>This indicates the amount of energy in the gas (it is equal to the Boltzman constant * absolute tempreture).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TimeSum">
+<code class="descname">TimeSum</code><a class="headerlink" href="#PyBoltz.PyBoltz.TimeSum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to calculate the sum of the collision times in the simulation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TotalCollisionFrequency">
+<code class="descname">TotalCollisionFrequency</code><a class="headerlink" href="#PyBoltz.PyBoltz.TotalCollisionFrequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total collision frequency for each gas at every energy step.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TotalCollisionFrequencyNT">
+<code class="descname">TotalCollisionFrequencyNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.TotalCollisionFrequencyNT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total collision frequency at each energy step. This is used for when EnableThermalMotion = 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TotalCollisionFrequencyNull">
+<code class="descname">TotalCollisionFrequencyNull</code><a class="headerlink" href="#PyBoltz.PyBoltz.TotalCollisionFrequencyNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total null collision frequency for each gas at every energy step.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TotalCollisionFrequencyNullNT">
+<code class="descname">TotalCollisionFrequencyNullNT</code><a class="headerlink" href="#PyBoltz.PyBoltz.TotalCollisionFrequencyNullNT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TotalCrossSection">
+<code class="descname">TotalCrossSection</code><a class="headerlink" href="#PyBoltz.PyBoltz.TotalCrossSection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TransverseDiffusion">
+<code class="descname">TransverseDiffusion</code><a class="headerlink" href="#PyBoltz.PyBoltz.TransverseDiffusion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transverse diffusion.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TransverseDiffusion1">
+<code class="descname">TransverseDiffusion1</code><a class="headerlink" href="#PyBoltz.PyBoltz.TransverseDiffusion1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transverse diffusion in microns/cm^0.5.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TransverseDiffusion1Error">
+<code class="descname">TransverseDiffusion1Error</code><a class="headerlink" href="#PyBoltz.PyBoltz.TransverseDiffusion1Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error for DT1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.TransverseDiffusionError">
+<code class="descname">TransverseDiffusionError</code><a class="headerlink" href="#PyBoltz.PyBoltz.TransverseDiffusionError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage for DIFTR.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VAN">
+<code class="descname">VAN</code><a class="headerlink" href="#PyBoltz.PyBoltz.VAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable that is equal to 100 * PresTempCor * CONST4 * 1e15</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VMoleculesPerCm3PerGas">
+<code class="descname">VMoleculesPerCm3PerGas</code><a class="headerlink" href="#PyBoltz.PyBoltz.VMoleculesPerCm3PerGas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array used to calculate the VAN for each gas.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VTMB">
+<code class="descname">VTMB</code><a class="headerlink" href="#PyBoltz.PyBoltz.VTMB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maxwell Boltzman velocity factor for each gas component.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VelocityErrorX">
+<code class="descname">VelocityErrorX</code><a class="headerlink" href="#PyBoltz.PyBoltz.VelocityErrorX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error on the x drift velocity.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VelocityErrorY">
+<code class="descname">VelocityErrorY</code><a class="headerlink" href="#PyBoltz.PyBoltz.VelocityErrorY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error on the y drift velocity.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VelocityErrorZ">
+<code class="descname">VelocityErrorZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.VelocityErrorZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage error on the z drift velocity.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VelocityX">
+<code class="descname">VelocityX</code><a class="headerlink" href="#PyBoltz.PyBoltz.VelocityX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drift velocity on the x axis.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VelocityY">
+<code class="descname">VelocityY</code><a class="headerlink" href="#PyBoltz.PyBoltz.VelocityY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drift velocity on the y axis.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.VelocityZ">
+<code class="descname">VelocityZ</code><a class="headerlink" href="#PyBoltz.PyBoltz.VelocityZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drift velocity on the z axis.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.WhichAngularModel">
+<code class="descname">WhichAngularModel</code><a class="headerlink" href="#PyBoltz.PyBoltz.WhichAngularModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to indicate the type of the elastic angular distribtions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.X">
+<code class="descname">X</code><a class="headerlink" href="#PyBoltz.PyBoltz.X" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to represent the x position in the simulation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.Y">
+<code class="descname">Y</code><a class="headerlink" href="#PyBoltz.PyBoltz.Y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to represent the y position in the simulation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltz.PyBoltz.Z">
+<code class="descname">Z</code><a class="headerlink" href="#PyBoltz.PyBoltz.Z" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable used to represent the z position in the simulation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltz.PyBoltz.end">
+<code class="descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltz.PyBoltz.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to convert some of the output values into different units.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Monte.html"
+                        title="previous chapter">Monte package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="PyBoltzRun.html"
+                        title="next chapter">PyBoltzRun module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/PyBoltz.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="PyBoltzRun.html" title="PyBoltzRun module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Monte.html" title="Monte package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyBoltz 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Bashar Al Atoum, Austin Mcdonald.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>

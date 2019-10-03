@@ -1,0 +1,8 @@
+MBSorts module
+==============
+.. autofunction:: MBSort
+.. autofunction:: MBSorts
+.. automodule:: MBSorts
+   :members: 
+   :undoc-members:
+   :show-inheritance:

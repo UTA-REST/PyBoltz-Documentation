@@ -1,0 +1,174 @@
+Gases package
+=============
+
+Submodules
+----------
+
+Gases.ARGON module
+------------------
+
+.. automodule:: Gases.ARGON
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.CF4 module
+----------------
+
+.. automodule:: Gases.CF4
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.CH4 module
+----------------
+
+.. automodule:: Gases.CH4
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.CO2 module
+----------------
+
+.. automodule:: Gases.CO2
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.DEUTERIUM module
+----------------------
+
+.. automodule:: Gases.DEUTERIUM
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.DME module
+----------------
+
+.. automodule:: Gases.DME
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.ETHANE module
+-------------------
+
+.. automodule:: Gases.ETHANE
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.GasUtil module
+--------------------
+
+.. automodule:: Gases.GasUtil
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.H2O module
+----------------
+
+.. automodule:: Gases.H2O
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.HELIUM3 module
+--------------------
+
+.. automodule:: Gases.HELIUM3
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.HELIUM4 module
+--------------------
+
+.. automodule:: Gases.HELIUM4
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.HYDROGEN module
+---------------------
+
+.. automodule:: Gases.HYDROGEN
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.ISOBUTANE module
+----------------------
+
+.. automodule:: Gases.ISOBUTANE
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.KRYPTON module
+--------------------
+
+.. automodule:: Gases.KRYPTON
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.NEON module
+-----------------
+
+.. automodule:: Gases.NEON
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.NITROGEN module
+---------------------
+
+.. automodule:: Gases.NITROGEN
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.OXYGEN module
+-------------------
+
+.. automodule:: Gases.OXYGEN
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.PROPANE module
+--------------------
+
+.. automodule:: Gases.PROPANE
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.XENON module
+------------------
+
+.. automodule:: Gases.XENON
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Gases.XENONMERT module
+----------------------
+
+.. automodule:: Gases.XENONMERT
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: Gases
+    :members:
+    :undoc-members:
+    :show-inheritance:
