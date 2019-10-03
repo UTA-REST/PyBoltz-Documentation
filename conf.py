@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 import sys
 import os 
-sys.path.append('/home/bashar/Desktop/MAGBOLTZ-py/src/Cython/')
+sys.path.append('/home/bashar/Desktop/Physics/PyBoltz/src/Cython')
 
 project = 'PyBoltz'
 copyright = '2019, Bashar Al Atoum, Austin Mcdonald'
@@ -52,6 +52,7 @@ exclude_patterns = ['build', 'Thumbs.db', '.DS_Store','*.c','*.py']
 # a list of builtin themes.
 #
 html_theme = 'default'
+master_doc = 'index'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

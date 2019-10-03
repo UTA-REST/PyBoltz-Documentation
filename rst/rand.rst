@@ -1,7 +1,0 @@
-rand module
-===========
-
-.. automodule:: rand
-   :members:
-   :undoc-members:
-   :show-inheritance:
