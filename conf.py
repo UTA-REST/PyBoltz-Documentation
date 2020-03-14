@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 import sys
 import os 
-sys.path.append('/home/bashar/Desktop/Physics/PyBoltz/src/Cython')
+sys.path.append('/home/bashar/Desktop/PyBoltz/src/Cython/')
 
 project = 'PyBoltz'
 copyright = '2019, Bashar Al Atoum, Austin Mcdonald'

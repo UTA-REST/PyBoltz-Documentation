@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>PyBoltzRun module &#8212; PyBoltz 1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">PyBoltz 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-PyBoltzRun">
+<span id="pyboltzrun-module"></span><h1>PyBoltzRun module<a class="headerlink" href="#module-PyBoltzRun" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="PyBoltzRun.PBRes">
+<em class="property">class </em><code class="sig-prename descclassname">PyBoltzRun.</code><code class="sig-name descname">PBRes</code><span class="sig-paren">(</span><em class="sig-param">a=0</em>, <em class="sig-param">b=0</em><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltzRun.PBRes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class used to store the output of PyBoltz with a val and error.</p>
+<dl class="attribute">
+<dt id="PyBoltzRun.PBRes.err">
+<code class="sig-name descname">err</code><em class="property"> = 0</em><a class="headerlink" href="#PyBoltzRun.PBRes.err" title="Permalink to this definition">¶</a></dt>
+<dd><p>The error variable.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltzRun.PBRes.val">
+<code class="sig-name descname">val</code><em class="property"> = 0</em><a class="headerlink" href="#PyBoltzRun.PBRes.val" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value variable.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyBoltzRun.PyBoltzRun">
+<em class="property">class </em><code class="sig-prename descclassname">PyBoltzRun.</code><code class="sig-name descname">PyBoltzRun</code><a class="headerlink" href="#PyBoltzRun.PyBoltzRun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class used to be the wrapper object of PyBoltz.</p>
+<dl class="method">
+<dt id="PyBoltzRun.PyBoltzRun.GasCode">
+<code class="sig-name descname">GasCode</code><span class="sig-paren">(</span><em class="sig-param">GasName</em><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.GasCode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to get the ID of the gas. The ID is simply the index of that gas in that array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltzRun.PyBoltzRun.GasName">
+<code class="sig-name descname">GasName</code><span class="sig-paren">(</span><em class="sig-param">Code</em><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.GasName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to return the name of the Gas ID given.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltzRun.PyBoltzRun.Gases">
+<code class="sig-name descname">Gases</code><em class="property"> = [nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'CO2', nan, 'H2O', 'OXYGEN', 'NITROGEN', nan, nan, nan, nan, 'HYDROGEN', 'DEUTERIUM', nan, nan, 'DME']</em><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.Gases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array of gases in PyBoltz.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltzRun.PyBoltzRun.ListGases">
+<code class="sig-name descname">ListGases</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.ListGases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to print all the gases names in PyBoltz.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyBoltzRun.PyBoltzRun.PBSettings">
+<code class="sig-name descname">PBSettings</code><em class="property"> = {'Angular_dist_model': 1, 'BField_Tesla': 0, 'BField_angle': 0, 'ConsoleOutputFlag': 0, 'Decor_Colls': 0, 'Decor_LookBacks': 0, 'Decor_Step': 0, 'EField_Vcm': 100, 'Enable_penning': 0, 'Enable_thermal_motion': 1, 'Fractions': [90, 10], 'Gases': ['NEON', 'CO2'], 'Max_collisions': 40000000.0, 'Max_electron_energy': 0, 'NumSamples': 10, 'Pressure_Torr': 750.062, 'Temperature_C': 23}</em><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.PBSettings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary used to store the inputs/settings for the PyBoltz simulation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltzRun.PyBoltzRun.ProcessInputs">
+<code class="sig-name descname">ProcessInputs</code><span class="sig-paren">(</span><em class="sig-param">MBObject</em>, <em class="sig-param">Inputs</em><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.ProcessInputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to setup the PyBoltz Object with the given inputs in the PBSettings dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltzRun.PyBoltzRun.ProcessOutputs">
+<code class="sig-name descname">ProcessOutputs</code><span class="sig-paren">(</span><em class="sig-param">MBObject</em><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.ProcessOutputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to fill the Outputs dictionary with the results from the PyBoltz object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyBoltzRun.PyBoltzRun.Run">
+<code class="sig-name descname">Run</code><span class="sig-paren">(</span><em class="sig-param">MySettings</em><span class="sig-paren">)</span><a class="headerlink" href="#PyBoltzRun.PyBoltzRun.Run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to run the PyBoltz simulation. Note that the PBSettings dictionary needs to be set up.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/rst/PyBoltzRun.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">PyBoltz 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Bashar Al Atoum, Austin Mcdonald.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
+    </div>
+  </body>
+</html>

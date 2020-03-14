@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>EnergyLimits module &#8212; PyBoltz 1.0 documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -49,7 +47,7 @@
 <span id="energylimits-module"></span><h1>EnergyLimits module<a class="headerlink" href="#module-EnergyLimits" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="EnergyLimits.EnergyLimit">
-<code class="descclassname">EnergyLimits.</code><code class="descname">EnergyLimit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimit" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">EnergyLimits.</code><code class="sig-name descname">EnergyLimit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimit" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function is used to calculate the upper electron energy limit by simulating the collisions. If it crosses the 
 Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz object to try a higher FinalEnergy value.
 This function is used when there is no magnetic field.</p>
@@ -60,7 +58,7 @@ This function is used when there is no magnetic field.</p>
 
 <dl class="function">
 <dt id="EnergyLimits.EnergyLimitB">
-<code class="descclassname">EnergyLimits.</code><code class="descname">EnergyLimitB</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitB" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">EnergyLimits.</code><code class="sig-name descname">EnergyLimitB</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitB" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function is used to calculate the upper electron energy limit by simulating the collisions. If it crosses the 
 Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz object to try a higher FinalEnergy value.
 This function is used when the magnetic field angle is 90 degrees to the electric field.</p>
@@ -70,7 +68,7 @@ This function is used when the magnetic field angle is 90 degrees to the electri
 
 <dl class="function">
 <dt id="EnergyLimits.EnergyLimitBT">
-<code class="descclassname">EnergyLimits.</code><code class="descname">EnergyLimitBT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitBT" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">EnergyLimits.</code><code class="sig-name descname">EnergyLimitBT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitBT" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function is used to calculate the upper electron energy limit by simulating the collisions. If it crosses the 
 Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz object to try a higher FinalEnergy value.
 This function is used when the magnetic field angle is 90 degrees to the electric field.</p>
@@ -80,7 +78,7 @@ This function is used when the magnetic field angle is 90 degrees to the electri
 
 <dl class="function">
 <dt id="EnergyLimits.EnergyLimitC">
-<code class="descclassname">EnergyLimits.</code><code class="descname">EnergyLimitC</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitC" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">EnergyLimits.</code><code class="sig-name descname">EnergyLimitC</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitC" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function is used to calculate the upper electron energy limit by simulating the collisions. If it crosses the 
 Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz object to try a higher FinalEnergy value.</p>
 <p>The object parameter is the PyBoltz object to be setup and used in the simulation.</p>
@@ -89,7 +87,7 @@ Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz
 
 <dl class="function">
 <dt id="EnergyLimits.EnergyLimitCT">
-<code class="descclassname">EnergyLimits.</code><code class="descname">EnergyLimitCT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitCT" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">EnergyLimits.</code><code class="sig-name descname">EnergyLimitCT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitCT" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function is used to calculate the upper electron energy limit by simulating the collisions. If it crosses the 
 Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz object to try a higher FinalEnergy value.</p>
 <p>The object parameter is the PyBoltz object to be setup and used in the simulation.</p>
@@ -98,7 +96,7 @@ Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz
 
 <dl class="function">
 <dt id="EnergyLimits.EnergyLimitT">
-<code class="descclassname">EnergyLimits.</code><code class="descname">EnergyLimitT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitT" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">EnergyLimits.</code><code class="sig-name descname">EnergyLimitT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EnergyLimits.EnergyLimitT" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function is used to calculate the upper electron energy limit by simulating the collisions. If it crosses the 
 Object.FinalEnergy value it will set self.IELOW to 1 which would get the PyBoltz object to try a higher FinalEnergy value.
 This function is used when there is no magnetic field.</p>
@@ -129,13 +127,11 @@ This function is used when there is no magnetic field.</p>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -164,7 +160,7 @@ This function is used when there is no magnetic field.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, Bashar Al Atoum, Austin Mcdonald.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
     </div>
   </body>
 </html>

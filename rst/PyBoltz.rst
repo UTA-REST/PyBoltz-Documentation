@@ -2,6 +2,6 @@ PyBoltz module
 ==============
 
 .. automodule:: PyBoltz
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

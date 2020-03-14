@@ -41,25 +41,37 @@
 <dt id="Gasmix.Gasmix">
 <em class="property">class </em><code class="sig-prename descclassname">Gasmix.</code><code class="sig-name descname">Gasmix</code><a class="headerlink" href="#Gasmix.Gasmix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The Gasmix object is used to coordinate the calling of different gas functions. It contains an array of six Gas object structs.
+This object is used by the Mixer functions to get the cross section outputs.</p>
+<dl class="attribute">
+<dt id="Gasmix.Gasmix.ExtraParameters">
+<code class="sig-name descname">ExtraParameters</code><a class="headerlink" href="#Gasmix.Gasmix.ExtraParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary used to pass extra parameters into the gas functions.</p>
+</dd></dl>
+
 <dl class="attribute">
 <dt id="Gasmix.Gasmix.Gases">
 <code class="sig-name descname">Gases</code><a class="headerlink" href="#Gasmix.Gasmix.Gases" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Array of six gases used to store the input and output of the gas functions. Uses the Gas struct.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="Gasmix.Gasmix.InitWithInfo">
 <code class="sig-name descname">InitWithInfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gasmix.Gasmix.InitWithInfo" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This functions simply initiates the gas data from the parameters. This functions fills the output arrays to zeros.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="Gasmix.Gasmix.Run">
 <code class="sig-name descname">Run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gasmix.Gasmix.Run" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This functions calls the corresponding gas functions.</p>
+</dd></dl>
 
 <dl class="method">
-<dt id="Gasmix.Gasmix.setCommons">
-<code class="sig-name descname">setCommons</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gasmix.Gasmix.setCommons" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt id="Gasmix.Gasmix.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Gasmix.Gasmix.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to zero out the main output arrays.</p>
+</dd></dl>
 
 </dd></dl>
 
